@@ -6,8 +6,10 @@
     <title>New Tab</title>
     <style>
       body {
+        margin: 0;
+        padding: 0;
         font-family: Arial, sans-serif;
-        background: linear-gradient(135deg, #74ebd5, #acb6e5);
+        background: url(wood_background.jpg) center/cover no-repeat;
         background-attachment: fixed;
         display: flex;
         justify-content: center;
@@ -16,10 +18,10 @@
         align-items: center;
       }
       .container {
-        background: rgba(255, 255, 255, 0.8);
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        background: url(parchment_texture.jpg) center/cover no-repeat;
+        padding: 40px;
+        border-radius: 4px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
         width: 80%;
         max-width: 800px;
         margin: 20px 0;
@@ -55,14 +57,16 @@
         align-items: center;
         justify-content: center;
         padding: 10px;
-        background: #ffffff;
-        border-radius: 5px;
+        margin: 2px;
+        outline: 3px solid goldenrod;
+        background: rgba(218, 165, 32, 0.2);
+        border-radius: 1px;
         text-decoration: none;
         color: #333;
         transition: background 0.3s;
       }
       .links li a:hover {
-        background: #ddd;
+        background: rgba(218, 165, 32, 1);
       }
       .links li a img {
         width: 16px;
