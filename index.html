@@ -4,424 +4,466 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>New Tab</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Lobster&family=Roboto:wght@700&family=Pacifico&family=Press+Start+2P&family=Oswald:wght@500&family=Great+Vibes&family=Dancing+Script:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search"
-    />
     <style>
       body {
         font-family: Arial, sans-serif;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        margin: 20px;
-        background-color: #f3f3f3;
-        overflow: hidden;
-      }
-      h1 {
-        margin-bottom: 20px;
-        font-size: 28px;
-        color: #333;
-        font-family: "Bad Script", sans-serif;
-        text-align: center;
-      }
-      .search-container {
-        margin-bottom: 20px;
-        width: 100%;
+        background: linear-gradient(135deg, #74ebd5, #acb6e5);
+        background-attachment: fixed;
         display: flex;
         justify-content: center;
-        position: relative;
+        min-height: 100vh;
+        overflow-y: auto;
       }
-      .search-input {
-        width: 50%;
-        max-width: 600px;
-        padding: 10px 40px;
-        font-size: 18px;
-        border: 2px solid #ccc;
-        border-radius: 25px;
-        text-align: center;
-        outline: none;
-      }
-      .material-symbols-outlined {
-        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
-      }
-      .search-container-icon {
-        transform: translateX(40px) translateY(10px);
-      }
-      .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        grid-auto-rows: 100px;
-        gap: 10px;
-        width: 100%;
-        padding: 10px;
-      }
-      .tile {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        color: #dadada;
+      .container {
+        background: rgba(255, 255, 255, 0.8);
         padding: 20px;
-        text-align: center;
         border-radius: 10px;
-        text-decoration: none;
-        font-size: 22px;
-        font-weight: bold;
-        transition: box-shadow 0.2s, text-shadow 0.2s;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        width: 80%;
+        max-width: 800px;
+        margin: 20px 0;
       }
-      .tile img {
-        width: 32px;
-        height: 32px;
-        margin-bottom: 5px;
+      h2 {
+        text-align: center;
+        margin-bottom: 10px;
       }
-      .tile:hover {
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-        text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+      .category {
+        margin-bottom: 15px;
       }
-      .tile:nth-child(odd) {
-        grid-row: span 2;
+      .links {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        list-style: none;
+        padding: 0;
+        text-align: center;
       }
-
-      /* Tile Colors */
-      .color-1 {
-        background-color: #0766ad;
-      }
-      .color-2 {
-        background-color: #29adb2;
-      }
-      .color-3 {
-        background-color: #298c38;
-      }
-      .color-4 {
-        background-color: #ff6f61;
-      }
-      .color-5 {
-        background-color: #6b4226;
-      }
-      .color-6 {
-        background-color: #a26769;
-      }
-    </style>
-    <script>
-      function searchGoogle(event) {
-        if (event.key === "Enter") {
-          const query = event.target.value;
-          if (query) {
-            window.location.href = `https://www.google.com/search?q=${encodeURIComponent(
-              query
-            )}`;
-          }
+      @media (min-width: 1400px) {
+        .links {
+          grid-template-columns: repeat(4, 1fr);
         }
       }
-    </script>
+      .links li {
+        display: flex;
+        justify-content: center;
+      }
+      .links li a {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        background: #ffffff;
+        border-radius: 5px;
+        text-decoration: none;
+        color: #333;
+        transition: background 0.3s;
+      }
+      .links li a:hover {
+        background: #ddd;
+      }
+      .links li a img {
+        width: 16px;
+        height: 16px;
+        margin-right: 8px;
+      }
+    </style>
   </head>
   <body>
-    <h1>
-      "Fear is the mind-killer. <br />
-      Fear is the little-death that brings total obliteration."
-    </h1>
-    <div class="search-container">
-      <span class="material-symbols-outlined search-container-icon">
-        search
-      </span>
-      <input
-        type="text"
-        class="search-input"
-        placeholder="Search Google..."
-        onkeypress="searchGoogle(event)"
-      />
-    </div>
-    <div class="grid">
-      <a
-        href="https://jira.sirsidynix.com/secure/RapidBoard.jspa?rapidView=247"
-        class="tile color-1"
-        ><img src="https://jira.sirsidynix.com/favicon.ico" alt="Jira" />Jira</a
-      >
-      <a
-        href="https://bitbucket.sirsi.pvt/projects/BLUEC/repos/uamodule-circulation/browse"
-        class="tile color-2"
-        ><img
-          src="https://bitbucket.sirsi.pvt/s/1944104305/c68db0f/n1cn5w/1.0/_/download/resources/com.atlassian.bitbucket.server.bitbucket-webpack-INTERNAL:favicon/favicon.ico"
-          alt="BitBucket"
-        />BitBucket</a
-      >
-      <a
-        href="https://collab.sirsi.pvt/pages/viewpage.action?pageId=44985279"
-        class="tile color-3"
-        ><img
-          src="https://collab.sirsi.pvt/favicon.ico"
-          alt="Confluence"
-        />Confluence</a
-      >
-      <a href="https://teamx.dev.sirsidynix.net/admin" class="tile color-4"
-        ><img
-          src="https://teamx.dev.sirsidynix.net/admin/favicon.ico"
-          alt="Team X"
-        />Team X</a
-      >
-      <a href="https://bogus.sirsidynix.com/admin/" class="tile color-1"
-        ><img
-          src="https://bogus.sirsidynix.com/admin/favicon.ico"
-          alt="Bogus"
-        />Bogus</a
-      >
-      <a href="http://intranet/" class="tile color-2"
-        ><img src="http://intranet/favicon.ico" alt="Intranet" />CSS Intranet</a
-      >
+    <div class="container">
+      <div class="category">
+        <h2>Favorites</h2>
+        <ul class="links">
+          <li>
+            <a
+              href="https://jira.sirsidynix.com/secure/RapidBoard.jspa?rapidView=247"
+              ><img
+                src="https://jira.sirsidynix.com/favicon.ico"
+                alt="Jira"
+              />Jira</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://bitbucket.sirsi.pvt/projects/BLUEC/repos/uamodule-circulation/browse"
+              ><img
+                src="https://bitbucket.sirsi.pvt/s/1944104305/c68db0f/n1cn5w/1.0/_/download/resources/com.atlassian.bitbucket.server.bitbucket-webpack-INTERNAL:favicon/favicon.ico"
+                alt="BitBucket"
+              />BitBucket</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://collab.sirsi.pvt/pages/viewpage.action?pageId=44985279"
+              ><img
+                src="https://collab.sirsi.pvt/favicon.ico"
+                alt="Confluence"
+              />Confluence</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="category">
+        <h2>Tools</h2>
+        <ul class="links">
+          <li>
+            <a href="https://google.com"
+              ><img
+                src="https://google.com/favicon.ico"
+                alt="Google Search"
+              />Google Search</a
+            >
+          </li>
+          <li>
+            <a href="https://chatgpt.com/"
+              ><img
+                src="https://chatgpt.com/favicon.ico"
+                alt="ChatGPT"
+              />ChatGPT</a
+            >
+          </li>
+          <li>
+            <a href="https://stackoverflow.com/"
+              ><img
+                src="https://stackoverflow.com/favicon.ico"
+                alt="Stack Overflow"
+              />Stack Overflow</a
+            >
+          </li>
+          <li>
+            <a href="https://excalidraw.com/"
+              ><img
+                src="https://excalidraw.com/favicon.ico"
+                alt="Excalidraw"
+              />Excalidraw</a
+            >
+          </li>
+          <li>
+            <a href="https://wiredjs.com/"
+              ><img
+                src="https://wiredjs.com/images/fav.png"
+                alt="WiredElements"
+              />WiredElements</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="category">
+        <h2>Work</h2>
+        <ul class="links">
+          <li>
+            <a
+              href="https://jira.sirsidynix.com/secure/RapidBoard.jspa?rapidView=247"
+              ><img
+                src="https://jira.sirsidynix.com/favicon.ico"
+                alt="Jira"
+              />Jira</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://bitbucket.sirsi.pvt/projects/BLUEC/repos/uamodule-circulation/browse"
+              ><img
+                src="https://bitbucket.sirsi.pvt/s/1944104305/c68db0f/n1cn5w/1.0/_/download/resources/com.atlassian.bitbucket.server.bitbucket-webpack-INTERNAL:favicon/favicon.ico"
+                alt="BitBucket"
+              />BitBucket</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://collab.sirsi.pvt/pages/viewpage.action?pageId=44985279"
+              ><img
+                src="https://collab.sirsi.pvt/favicon.ico"
+                alt="Confluence"
+              />Confluence</a
+            >
+          </li>
+          <li>
+            <a href="https://teamx.dev.sirsidynix.net/admin"
+              ><img
+                src="https://www.sirsidynix.com/wp-content/uploads/2019/04/SD-icon-flat-150x150.png"
+                alt="Team X"
+              />Team X</a
+            >
+          </li>
+          <li>
+            <a href="https://bogus.sirsidynix.com/admin/"
+              ><img
+                src="https://www.sirsidynix.com/wp-content/uploads/2019/04/SD-icon-flat-150x150.png"
+                alt="Bogus"
+              />Bogus</a
+            >
+          </li>
+          <li>
+            <a href="http://intranet/"
+              ><img
+                src="https://www.sirsidynix.com/wp-content/uploads/2019/04/SD-icon-flat-150x150.png"
+                alt="Intranet"
+              />
+              Intranet</a
+            >
+          </li>
+          <li>
+            <a href="https://jenkins/view/Knights/job/TeamXUpgrade/"
+              ><img src="https://jenkins/favicon.ico" alt="Old Jenkins" />Old
+              Jenkins</a
+            >
+          </li>
+          <li>
+            <a href="https://jenkins-rl9.sirsi.pvt/"
+              ><img
+                src="https://jenkins-rl9.sirsi.pvt/favicon.ico"
+                alt="New Jenkins"
+              />New Jenkins</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://marvelapp.com/bhi8da4/screen/58437871bhi8da4/screen/58437871"
+              ><img
+                src="https://m3-static.marvelapp.com/favicon.ico"
+                alt="Style Guide"
+              />Style Guide</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://jira.sirsidynix.com/secure/TimesheetReport.jspa?reportKey=jira-timesheet-plugin%3Areport&selectedProjectId=11752&reportingDay=1&startDate=2023-01-01&endDate=2023-02-09&targetUser=anthony.litchfield&projectRoleId=&filterid=&priority=&commentfirstword=&weekends=true&showDetails=true&sum=day&groupByField=&sortBy=&sortDir=ASC&Next=Next"
+              ><img
+                src="https://jira.sirsidynix.com/favicon.ico"
+                alt="Time Log Report"
+              />Time Log Report</a
+            >
+          </li>
+          <li>
+            <a
+              href="http://jsds-splunk-server.bcc.sirsi.pvt:8000/en-US/app/search/search?q=search%20host%3D%22teamx*%22%20NOT%20%22healthcheck%2Falive%22%20NOT%20%22actuator%2Fhealth%22%20NOT%20%22status%2Fhealth%22&display.page.search.mode=smart&dispatch.sample_ratio=1&earliest=-60m%40m&latest=now&display.general.type=events&display.visualizations.charting.chart=bar&display.page.search.tab=events&sid=1572033568.13838"
+              ><img
+                src="http://jsds-splunk-server.bcc.sirsi.pvt:8000/favicon.ico"
+                alt="Engineering Splunk"
+              />Engineering Splunk</a
+            >
+          </li>
+          <li>
+            <a href="https://splunk1.sirsi.net:8000/en-US/account/login"
+              ><img
+                src="https://splunk1.sirsi.net:8000/favicon.ico"
+                alt="Production Splunk"
+              />Production Splunk</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://jenkins/job/bcui-common-components/job/master/Storybook/"
+              ><img
+                src="https://storybook.js.org/icon.svg"
+                alt="Storybook"
+              />Storybook</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://collab.sirsi.pvt/pages/viewpage.action?pageId=41913309"
+              ><img
+                src="https://collab.sirsi.pvt/favicon.ico"
+                alt="Knights Jira Templates"
+              />Jira Templates</a
+            >
+          </li>
+          <li>
+            <a href="https://marvelapp.com/projects/my"
+              ><img
+                src="https://m3-static.marvelapp.com/favicon.ico"
+                alt="Marvel Mockups"
+              />Marvel Mockups</a
+            >
+          </li>
+          <li>
+            <a href="http://nexus.sirsi.pvt/"
+              ><img
+                src="http://nexus.sirsi.pvt/favicon.ico"
+                alt="Nexus"
+              />Nexus</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="category">
+        <h2>Documentation</h2>
+        <ul class="links">
+          <li>
+            <a href="https://docs.sencha.com/extjs/4.2.1/#!/api/Ext.grid.Panel"
+              ><img
+                src="https://docs.sencha.com/favicon.ico"
+                alt="ExtJS Docs"
+              />ExtJS Docs</a
+            >
+          </li>
 
-      <a
-        href="https://jenkins/view/Knights/job/TeamXUpgrade/"
-        class="tile color-3"
-        ><img src="https://jenkins/favicon.ico" alt="Old Jenkins" />Old
-        Jenkins</a
-      >
-
-      <a href="https://jenkins-rl9.sirsi.pvt/" class="tile color-4"
-        ><img
-          src="https://jenkins-rl9.sirsi.pvt/favicon.ico"
-          alt="New Jenkins"
-        />New Jenkins</a
-      >
-
-      <a
-        href="https://marvelapp.com/bhi8da4/screen/58437871bhi8da4/screen/58437871"
-        class="tile color-5"
-        ><img
-          src="https://marvelapp.com/bhi8da4/screen/58437871favicon.ico"
-          alt="Style Guide"
-        />Style Guide</a
-      >
-
-      <a
-        href="https://docs.sencha.com/extjs/4.2.1/#!/api/Ext.grid.Panel"
-        class="tile color-6"
-        ><img src="https://docs.sencha.com/favicon.ico" alt="ExtJS Docs" />ExtJS
-        Docs</a
-      >
-
-      <a
-        href="http://docs.deftjs.org/deft-js/0.9.1/#!/api/Deft.promise.Deferred"
-        class="tile color-1"
-        ><img
-          src="http://docs.deftjs.org/favicon.ico"
-          alt="DeftJS Docs"
-        />DeftJS Docs</a
-      >
-
-      <a
-        href="https://reactjs.org/docs/hooks-reference.html"
-        class="tile color-2"
-        ><img src="https://reactjs.org/favicon.ico" alt="React Docs" />React
-        Docs</a
-      >
-
-      <a href="https://jestjs.io/docs/en/mock-function-api" class="tile color-3"
-        ><img src="https://jestjs.io/favicon.ico" alt="Jest Docs" />Jest Docs</a
-      >
-
-      <a
-        href="https://airbnb.io/enzyme/docs/api/ShallowWrapper/find.html"
-        class="tile color-4"
-        ><img src="https://airbnb.io/favicon.ico" alt="Enzyme Docs" />Enzyme
-        Docs</a
-      >
-
-      <a href="https://docs.npmjs.com/cli-documentation/" class="tile color-5"
-        ><img src="https://docs.npmjs.com/favicon.ico" alt="NPM Docs" />NPM
-        Docs</a
-      >
-
-      <a
-        href="https://classic.yarnpkg.com/en/docs/cli/install"
-        class="tile color-6"
-        ><img
-          src="https://classic.yarnpkg.com/favicon.ico"
-          alt="Yarn Docs"
-        />Yarn Docs</a
-      >
-
-      <a
-        href="https://jira.sirsidynix.com/secure/TimesheetReport.jspa?reportKey=jira-timesheet-plugin%3Areport&selectedProjectId=11752&reportingDay=1&startDate=2023-01-01&endDate=2023-02-09&targetUser=anthony.litchfield&projectRoleId=&filterid=&priority=&commentfirstword=&weekends=true&showDetails=true&sum=day&groupByField=&sortBy=&sortDir=ASC&Next=Next"
-        class="tile color-1"
-        ><img
-          src="https://jira.sirsidynix.com/favicon.ico"
-          alt="Time Log Report"
-        />Time Log Report</a
-      >
-
-      <a
-        href="http://jsds-splunk-server.bcc.sirsi.pvt:8000/en-US/app/search/search?q=search%20host%3D%22teamx*%22%20NOT%20%22healthcheck%2Falive%22%20NOT%20%22actuator%2Fhealth%22%20NOT%20%22status%2Fhealth%22&display.page.search.mode=smart&dispatch.sample_ratio=1&earliest=-60m%40m&latest=now&display.general.type=events&display.visualizations.charting.chart=bar&display.page.search.tab=events&sid=1572033568.13838"
-        class="tile color-1"
-        ><img
-          src="http://jsds-splunk-server.bcc.sirsi.pvt:8000/favicon.ico"
-          alt="Engineering Splunk"
-        />Engineering Splunk</a
-      >
-
-      <a
-        href="https://splunk1.sirsi.net:8000/en-US/account/login"
-        class="tile color-2"
-        ><img
-          src="https://splunk1.sirsi.net:8000/favicon.ico"
-          alt="Production Splunk"
-        />Production Splunk</a
-      >
-
-      <a
-        href="https://jenkins/job/bcui-common-components/job/master/Storybook/"
-        class="tile color-3"
-        ><img
-          src="https://storybook.js.org/icon.svg"
-          alt="Common-Components Storybook"
-        />Common-Components Storybook</a
-      >
-
-      <a href="https://lodash.com/docs/" class="tile color-4"
-        ><img src="https://lodash.com/favicon.ico" alt="Lodash Docs" />Lodash
-        Docs</a
-      >
-
-      <a
-        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes"
-        class="tile color-5"
-        ><img
-          src="https://developer.mozilla.org/favicon.ico"
-          alt="MDN Web Docs"
-        />MDN Web Docs</a
-      >
-
-      <a
-        href="https://collab.sirsi.pvt/pages/viewpage.action?pageId=41913309"
-        class="tile color-6"
-        ><img
-          src="https://collab.sirsi.pvt/favicon.ico"
-          alt="Knights Jira Templates"
-        />Knights Jira Templates</a
-      >
-
-      <a href="https://marvelapp.com/projects/my" class="tile color-1"
-        ><img
-          src="https://marvelapp.com/favicon.ico"
-          alt="Marvel Mockups"
-        />Marvel Mockups</a
-      >
-
-      <a href="http://nexus.sirsi.pvt/" class="tile color-2"
-        ><img src="http://nexus.sirsi.pvt/favicon.ico" alt="Nexus" />Nexus</a
-      >
-
-      <a href="https://excalidraw.com/" class="tile color-3"
-        ><img
-          src="https://excalidraw.com/favicon.ico"
-          alt="Excalidraw"
-        />Excalidraw</a
-      >
-
-      <a href="https://wiredjs.com/" class="tile color-4"
-        ><img
-          src="https://wiredjs.com/favicon.ico"
-          alt="WiredElements WiredJS"
-        />WiredElements WiredJS</a
-      >
-
-      <a href="https://www.dcode.fr/word-search-regexp" class="tile color-5"
-        ><img
-          src="https://www.dcode.fr/favicon.ico"
-          alt="Regex Dictionary"
-        />Regex Dictionary</a
-      >
-
-      <a
-        href="https://www.bestwordlist.com/c/q/1/5letterwordswithq.htm"
-        class="tile color-6"
-        ><img
-          src="https://www.bestwordlist.com/favicon.ico"
-          alt="Best Word List"
-        />Best Word List</a
-      >
-
-      <a href="https://wordplay.com/new" class="tile color-1"
-        ><img
-          src="https://wordplay.com/favicon.ico"
-          alt="Wordplay Wordle"
-        />Wordplay Wordle</a
-      >
-
-      <a
-        href="https://qntm.org/files/absurdle/absurdle.html"
-        class="tile color-2"
-        ><img src="https://qntm.org/favicon.ico" alt="Absurdle" />Absurdle</a
-      >
-
-      <a href="https://crosswordle.serializer.ca/" class="tile color-3"
-        ><img
-          src="https://crosswordle.serializer.ca/favicon.ico"
-          alt="Crosswordle"
-        />Crosswordle</a
-      >
-
-      <a href="https://www.sedecordle.com/" class="tile color-4"
-        ><img
-          src="https://www.sedecordle.com/favicon.ico"
-          alt="Sedecordle"
-        />Sedecordle</a
-      >
-
-      <a href="https://globle-game.com/" class="tile color-5"
-        ><img src="https://globle-game.com/favicon.ico" alt="Globle" />Globle</a
-      >
-
-      <a
-        href="https://www.wordplays.com/wordgames/text-twist"
-        class="tile color-6"
-        ><img
-          src="https://www.wordplays.com/favicon.ico"
-          alt="Text Twist"
-        />Text Twist</a
-      >
-
-      <a href="https://www.wordplays.com/help/boggle/" class="tile color-1"
-        ><img
-          src="https://www.wordplays.com/favicon.ico"
-          alt="Boggle"
-        />Boggle</a
-      >
-
-      <a href="https://stackoverflow.com/" class="tile color-2"
-        ><img
-          src="https://stackoverflow.com/favicon.ico"
-          alt="Stack Overflow"
-        />Stack Overflow</a
-      >
-
-      <a href="https://github.com/" class="tile color-6"
-        ><img src="https://github.com/favicon.ico" alt="GitHub" />GitHub</a
-      >
-
-      <a href="https://chatgpt.com/" class="tile color-4"
-        ><img src="https://chatgpt.com/favicon.ico" alt="ChatGPT" />ChatGPT</a
-      >
-
-      <a href="https://xkcd.com/" class="tile color-5"
-        ><img src="https://xkcd.com/favicon.ico" alt="xkcd" />xkcd</a
-      >
-
-      <a href="https://github.com/apereo/cas" class="tile color-6"
-        ><img
-          src="https://github.com/favicon.ico"
-          alt="Apereo CAS GitHub"
-        />Apereo CAS GitHub</a
-      >
+          <li>
+            <a
+              href="http://docs.deftjs.org/deft-js/0.9.1/#!/api/Deft.promise.Deferred"
+              ><img
+                src="http://docs.deftjs.org/favicon.ico"
+                alt="DeftJS Docs"
+              />DeftJS Docs</a
+            >
+          </li>
+          <li>
+            <a href="https://reactjs.org/docs/hooks-reference.html"
+              ><img
+                src="https://reactjs.org/favicon.ico"
+                alt="React Docs"
+              />React Docs</a
+            >
+          </li>
+          <li>
+            <a href="https://jestjs.io/docs/en/mock-function-api"
+              ><img src="https://jestjs.io/img/jest.png" alt="Jest Docs" />Jest
+              Docs</a
+            >
+          </li>
+          <li>
+            <a href="https://airbnb.io/enzyme/docs/api/ShallowWrapper/find.html"
+              ><img
+                src="https://airbnb.io/favicon.ico"
+                alt="Enzyme Docs"
+              />Enzyme Docs</a
+            >
+          </li>
+          <li>
+            <a href="https://docs.npmjs.com/cli-documentation/"
+              ><img
+                src="https://docs.npmjs.com/favicon-32x32.png"
+                alt="NPM Docs"
+              />NPM Docs</a
+            >
+          </li>
+          <li>
+            <a href="https://classic.yarnpkg.com/en/docs/cli/install"
+              ><img
+                src="https://classic.yarnpkg.com/favicon.ico"
+                alt="Yarn Docs"
+              />Yarn Docs</a
+            >
+          </li>
+          <li>
+            <a href="https://lodash.com/docs/"
+              ><img
+                src="https://lodash.com/favicon.ico"
+                alt="Lodash Docs"
+              />Lodash Docs</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes"
+              ><img
+                src="https://developer.mozilla.org/favicon.ico"
+                alt="MDN Web Docs"
+              />MDN Web Docs</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/apereo/cas"
+              ><img
+                src="https://github.com/favicon.ico"
+                alt="Apereo CAS GitHub"
+              />Apereo CAS GitHub</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="category">
+        <h2>Entertainment</h2>
+        <ul class="links">
+          <li>
+            <a href="https://xkcd.com/"
+              ><img src="https://xkcd.com/favicon.ico" alt="xkcd" />xkcd</a
+            >
+          </li>
+          <li>
+            <a href="https://www.dcode.fr/word-search-regexp"
+              ><img
+                src="https://www.dcode.fr/favicon.ico"
+                alt="Regex Dictionary"
+              />Regex Dictionary</a
+            >
+          </li>
+          <li>
+            <a href="https://www.bestwordlist.com/c/q/1/5letterwordswithq.htm"
+              ><img
+                src="https://www.bestwordlist.com/favicon.ico"
+                alt="Best Word List"
+              />Best Word List</a
+            >
+          </li>
+          <li>
+            <a href="https://wordplay.com/new"
+              ><img
+                src="https://wordplay.com/favicon.ico"
+                alt="Wordplay Wordle"
+              />Wordplay Wordle</a
+            >
+          </li>
+          <li>
+            <a href="https://qntm.org/files/absurdle/absurdle.html"
+              ><img
+                src="https://qntm.org/files/absurdle/assets/favicon.ico"
+                alt="Absurdle"
+              />Absurdle</a
+            >
+          </li>
+          <li>
+            <a href="https://crosswordle.serializer.ca/"
+              ><img
+                src="https://crosswordle.serializer.ca/favicon.ico"
+                alt="Crosswordle"
+              />Crosswordle</a
+            >
+          </li>
+          <li>
+            <a href="https://www.sedecordle.com/"
+              ><img
+                src="https://www.sedecordle.com/favicon.ico"
+                alt="Sedecordle"
+              />Sedecordle</a
+            >
+          </li>
+          <li>
+            <a href="https://globle-game.com/"
+              ><img
+                src="https://globle-game.com/favicon.ico"
+                alt="Globle"
+              />Globle</a
+            >
+          </li>
+          <li>
+            <a href="https://www.wordplays.com/wordgames/text-twist"
+              ><img
+                src="https://www.wordplays.com/favicon.ico"
+                alt="Text Twist"
+              />Text Twist</a
+            >
+          </li>
+          <li>
+            <a href="https://www.wordplays.com/help/boggle/"
+              ><img
+                src="https://www.wordplays.com/favicon.ico"
+                alt="Boggle"
+              />Boggle</a
+            >
+          </li>
+          <li>
+            <a href="https://open.spotify.com/">
+              <img
+                src="https://open.spotify.com/favicon.ico"
+                alt="Spotify"
+              />Spotify
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </body>
 </html>
