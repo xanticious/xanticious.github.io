@@ -1,0 +1,21 @@
+[
+  { "id": "favorites", "name": "Favorites" },
+  { "id": "tools", "name": "Tools" },
+  { "id": "work", "name": "Work" },
+  { "id": "environments", "name": "Environments" },
+  { "id": "documentation", "name": "Documentation" },
+  { "id": "word_games", "name": "Word Games" },
+  { "id": "streaming_services", "name": "Streaming Video" },
+  { "id": "programming_humor", "name": "Programming Humor" },
+  { "id": "for_musicians", "name": "For Musicians" },
+  { "id": "shopping", "name": "Shopping" },
+  { "id": "streaming_music", "name": "Streaming Music" },
+  { "id": "news", "name": "News" },
+  { "id": "e_learning", "name": "E-Learning" },
+  { "id": "for_developers", "name": "For Developers" },
+  { "id": "for_researchers", "name": "For Researchers" },
+  { "id": "tech", "name": "Technology" },
+  { "id": "social_media", "name": "Social Media" },
+  { "id": "ai", "name": "Artificial Intelligence" },
+  { "id": "maps_and_weather", "name": "Maps and Weather" }
+]
