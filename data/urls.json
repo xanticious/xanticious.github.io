@@ -11,14 +11,14 @@
     "name": "BitBucket",
     "shortName": "bitbucket",
     "categories": ["favorites", "work"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://collab.sirsi.pvt/pages/viewpage.action?pageId=44985279",
     "name": "Confluence",
     "shortName": "confluence",
     "categories": ["favorites", "work"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://google.com/",
@@ -116,7 +116,7 @@
     "name": "Jira Templates",
     "shortName": "jira_templates",
     "categories": ["work"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://marvelapp.com/projects/my",
@@ -137,112 +137,112 @@
     "name": "Bogus",
     "shortName": "bogus",
     "categories": ["environments"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://teamx.dev.sirsidynix.net/admin",
     "name": "TeamX",
     "shortName": "teamx",
     "categories": ["environments"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://preprod.bc.sirsidynix.net/admin",
     "name": "Pre-Prod",
     "shortName": "pre-prod",
     "categories": ["environments"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://patch-prod.dev.sirsidynix.net/admin",
     "name": "Patch-Prod",
     "shortName": "patch-prod",
     "categories": ["environments"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://apac1.bc.sirsidynix.net.au/admin",
     "name": "APAC",
     "shortName": "apac",
     "categories": ["environments"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://can1.bc.sirsidynix.net/admin",
     "name": "CAN1",
     "shortName": "can1",
     "categories": ["environments"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://emea1.bc.sirsidynix.net.uk/admin",
     "name": "EMEA1",
     "shortName": "emea1",
     "categories": ["environments"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://na1.bc.sirsidynix.net/admin",
     "name": "NA1",
     "shortName": "na1",
     "categories": ["environments"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://na2.bc.sirsidynix.net/admin",
     "name": "NA2",
     "shortName": "na2",
     "categories": ["environments"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://na3.bc.sirsidynix.net/admin",
     "name": "NA3",
     "shortName": "na3",
     "categories": ["environments"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://sg1.bc.sirsidynix.sg/admin",
     "name": "SG1",
     "shortName": "sg1",
     "categories": ["environments"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://beta.sales.sirsidynix.net/admin",
     "name": "Beta Sales",
     "shortName": "beta_sales",
     "categories": ["environments"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://prod.sales.sirsidynix.net/admin",
     "name": "Prod Sales",
     "shortName": "prod_sales",
     "categories": ["environments"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://apactest.bc.sirsidynix.net.au/admin",
     "name": "APAC Test",
     "shortName": "apac_test",
     "categories": ["environments"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://emeatest.bc.sirsidynix.net.uk/admin",
     "name": "EMEA Test",
     "shortName": "emea_test",
     "categories": ["environments"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://noamtest.bc.sirsidynix.net/admin",
     "name": "NOAM Test",
     "shortName": "noam_test",
     "categories": ["environments"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://docs.sencha.com/extjs/4.2.1/#!/api/Ext.grid.Panel",
