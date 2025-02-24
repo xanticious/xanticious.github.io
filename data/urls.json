@@ -46,14 +46,14 @@
     "name": "Excalidraw",
     "shortName": "excalidraw",
     "categories": ["tools"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://wiredjs.com/",
     "name": "WiredElements",
     "shortName": "wiredelements",
     "categories": ["tools"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "http://intranet/",
@@ -88,7 +88,7 @@
     "name": "Time Log Report",
     "shortName": "time_log_report",
     "categories": ["work"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "http://jsds-splunk-server.bcc.sirsi.pvt:8000/en-US/app/search/search?q=search%20host%3D%22teamx*%22%20NOT%20%22healthcheck%2Falive%22%20NOT%20%22actuator%2Fhealth%22%20NOT%20%22status%2Fhealth%22&display.page.search.mode=smart&dispatch.sample_ratio=1&earliest=-60m%40m&latest=now&display.general.type=events&display.visualizations.charting.chart=bar&display.page.search.tab=events&sid=1572033568.13838",
@@ -130,7 +130,7 @@
     "name": "Nexus",
     "shortName": "nexus",
     "categories": ["work"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://bogus.sirsidynix.com/admin/",
@@ -298,14 +298,14 @@
     "name": "Lodash Docs",
     "shortName": "lodash_docs",
     "categories": ["documentation"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes",
     "name": "MDN Web Docs",
     "shortName": "mdn_web_docs",
     "categories": ["documentation"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://github.com/apereo/cas",
@@ -354,7 +354,7 @@
     "name": "Sedecordle",
     "shortName": "sedecordle",
     "categories": ["word_games"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://globle-game.com/",
@@ -396,7 +396,7 @@
     "name": "Hulu",
     "shortName": "hulu",
     "categories": ["streaming_services"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://www.amazon.com/Amazon-Video/",
@@ -410,7 +410,7 @@
     "name": "Disney+",
     "shortName": "disney+",
     "categories": ["streaming_services"],
-    "faviconExtension": "ico"
+    "faviconExtension": "svg"
   },
   {
     "url": "https://www.max.com/",
@@ -438,7 +438,7 @@
     "name": "Apple TV+",
     "shortName": "apple_tv+",
     "categories": ["streaming_services"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://xkcd.com/",
@@ -459,7 +459,7 @@
     "name": "CommitStrip",
     "shortName": "commitstrip",
     "categories": ["programming_humor"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://thedailywtf.com/",
@@ -494,14 +494,14 @@
     "name": "Noteflight",
     "shortName": "noteflight",
     "categories": ["for_musicians"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://imslp.org/",
     "name": "IMSLP Petrucci Music Library",
     "shortName": "imslp_petrucci_music_library",
     "categories": ["for_musicians"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://www.songsterr.com/",
@@ -558,7 +558,7 @@
     "name": "Spotify",
     "shortName": "spotify",
     "categories": ["streaming_music"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://www.youtube.com/music/",
@@ -572,7 +572,7 @@
     "name": "Apple Music",
     "shortName": "apple_music",
     "categories": ["streaming_music"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://www.pandora.com/",
@@ -586,14 +586,14 @@
     "name": "NPR",
     "shortName": "npr",
     "categories": ["news"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://www.bbc.com/",
     "name": "BBC",
     "shortName": "bbc",
     "categories": ["news"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://www.nytimes.com/",
@@ -614,14 +614,14 @@
     "name": "The Guardian",
     "shortName": "the_guardian",
     "categories": ["news"],
-    "faviconExtension": "ico"
+    "faviconExtension": "svg"
   },
   {
     "url": "https://www.cnn.com/",
     "name": "CNN",
     "shortName": "cnn",
     "categories": ["news"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://www.aljazeera.com/",
@@ -656,14 +656,14 @@
     "name": "Coursera",
     "shortName": "coursera",
     "categories": ["e_learning"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://www.udemy.com/",
     "name": "Udemy",
     "shortName": "udemy",
     "categories": ["e_learning"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://www.khanacademy.org/",
@@ -712,21 +712,21 @@
     "name": "Pluralsight",
     "shortName": "pluralsight",
     "categories": ["e_learning"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://www.teachable.com/",
     "name": "Teachable",
     "shortName": "teachable",
     "categories": ["e_learning"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://github.com/",
     "name": "GitHub",
     "shortName": "github",
     "categories": ["for_developers"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://stackoverflow.com/",
@@ -761,7 +761,7 @@
     "name": "GeeksforGeeks",
     "shortName": "geeksforgeeks",
     "categories": ["for_developers"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://www.jetbrains.com/",
@@ -775,7 +775,7 @@
     "name": "freeCodeCamp",
     "shortName": "freecodecamp",
     "categories": ["for_developers"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://www.hackerrank.com/",
@@ -818,7 +818,7 @@
     "name": "Nature",
     "shortName": "nature",
     "categories": ["for_researchers"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://www.sciencemag.org/",
@@ -860,7 +860,7 @@
     "name": "Springer",
     "shortName": "springer",
     "categories": ["for_researchers"],
-    "faviconExtension": "ico"
+    "faviconExtension": "svg"
   },
   {
     "url": "https://www.smithsonianmag.com/",
@@ -874,7 +874,7 @@
     "name": "TechCrunch",
     "shortName": "techcrunch",
     "categories": ["tech"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://www.wired.com/",
@@ -895,21 +895,21 @@
     "name": "CNET",
     "shortName": "cnet",
     "categories": ["tech"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://www.engadget.com/",
     "name": "Engadget",
     "shortName": "engadget",
     "categories": ["tech"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://www.tomshardware.com/",
     "name": "Tom's Hardware",
     "shortName": "toms_hardware",
     "categories": ["tech"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://www.facebook.com/",
@@ -930,7 +930,7 @@
     "name": "Instagram",
     "shortName": "instagram",
     "categories": ["social_media"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://www.linkedin.com/",
@@ -951,14 +951,14 @@
     "name": "Pinterest",
     "shortName": "pinterest",
     "categories": ["social_media"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://www.reddit.com/",
     "name": "Reddit",
     "shortName": "reddit",
     "categories": ["social_media"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://www.tumblr.com/",
@@ -1007,28 +1007,28 @@
     "name": "GitHub Copilot",
     "shortName": "github_copilot",
     "categories": ["ai"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://www.runwayml.com/",
     "name": "RunwayML",
     "shortName": "runwayml",
     "categories": ["ai"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://www.artbreeder.com/",
     "name": "Artbreeder",
     "shortName": "artbreeder",
     "categories": ["ai"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://deepdreamgenerator.com/",
     "name": "Deep Dream Generator",
     "shortName": "deep_dream_generator",
     "categories": ["ai"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://www.nightcafe.studio/",
@@ -1063,7 +1063,7 @@
     "name": "The Weather Channel",
     "shortName": "the_weather_channel",
     "categories": ["maps_and_weather"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://www.accuweather.com/",
@@ -1084,14 +1084,14 @@
     "name": "MapQuest",
     "shortName": "mapquest",
     "categories": ["maps_and_weather"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://www.openstreetmap.org/",
     "name": "OpenStreetMap",
     "shortName": "openstreetmap",
     "categories": ["maps_and_weather"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://www.windfinder.com/",
@@ -1103,16 +1103,16 @@
   {
     "url": "https://www.yr.no/",
     "name": "YR.no",
-    "shortName": "yr.no",
+    "shortName": "yr_no",
     "categories": ["maps_and_weather"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://www.climacell.co/",
     "name": "ClimaCell",
     "shortName": "climacell",
     "categories": ["maps_and_weather"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://darksky.net/",
