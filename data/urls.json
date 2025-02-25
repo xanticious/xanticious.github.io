@@ -1,20 +1,27 @@
 [
   {
-    "url": "https://jira.sirsidynix.com/secure/RapidBoard.jspa?rapidView=247",
+    "url": "https://jira.sirsidynix.com/secure/RapidBoard.jspa?rapidView=367",
     "name": "Jira",
     "shortName": "jira",
     "categories": ["favorites", "work"],
     "faviconExtension": "png"
   },
   {
-    "url": "https://bitbucket.sirsi.pvt/projects/BLUEC/repos/uamodule-circulation/browse",
-    "name": "BitBucket",
-    "shortName": "bitbucket",
+    "url": "https://bitbucket.sirsi.pvt/projects/BCUI/repos/bcd-ui/browse",
+    "name": "BitBucket (Patron)",
+    "shortName": "bitbucket_patron",
     "categories": ["favorites", "work"],
     "faviconExtension": "png"
   },
   {
-    "url": "https://collab.sirsi.pvt/pages/viewpage.action?pageId=44985279",
+    "url": "https://bitbucket.sirsi.pvt/projects/BCUI/repos/bcd-ui/browse",
+    "name": "BitBucket (BCD-UI)",
+    "shortName": "bitbucket_ui",
+    "categories": ["favorites", "work"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://collab.sirsi.pvt/pages/viewpage.action?pageId=138143633",
     "name": "Confluence",
     "shortName": "confluence",
     "categories": ["favorites", "work"],
@@ -70,7 +77,7 @@
     "faviconExtension": "ico"
   },
   {
-    "url": "https://jenkins-rl9.sirsi.pvt/",
+    "url": "https://jenkins-rl9.sirsi.pvt/view/bcui/job/bcui-bcd-ui/",
     "name": "New Jenkins",
     "shortName": "new_jenkins",
     "categories": ["work"],
@@ -649,7 +656,7 @@
     "name": "The Washington Post",
     "shortName": "the_washington_post",
     "categories": ["news"],
-    "faviconExtension": "ico"
+    "faviconExtension": "svg"
   },
   {
     "url": "https://www.coursera.org/",
@@ -814,18 +821,18 @@
     "faviconExtension": "png"
   },
   {
-    "url": "https://www.sciencemag.org/",
+    "url": "https://www.science.org/",
     "name": "Science",
     "shortName": "science",
     "categories": ["for_researchers"],
-    "faviconExtension": "ico"
+    "faviconExtension": "webp"
   },
   {
     "url": "https://www.researchgate.net/",
     "name": "ResearchGate",
     "shortName": "researchgate",
     "categories": ["for_researchers"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://www.acs.org/",
@@ -846,7 +853,7 @@
     "name": "JSTOR",
     "shortName": "jstor",
     "categories": ["for_researchers"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://www.springer.com/",
@@ -972,7 +979,7 @@
     "name": "WhatsApp",
     "shortName": "whatsapp",
     "categories": ["social_media"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://stablediffusionweb.com/",
@@ -1028,19 +1035,12 @@
     "name": "NightCafe Studio",
     "shortName": "nightcafe_studio",
     "categories": ["ai"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://www.playgroundai.com/",
     "name": "Playground AI",
     "shortName": "playground_ai",
-    "categories": ["ai"],
-    "faviconExtension": "ico"
-  },
-  {
-    "url": "https://www.pixray.github.io/",
-    "name": "Pixray",
-    "shortName": "pixray",
     "categories": ["ai"],
     "faviconExtension": "ico"
   },
@@ -1106,12 +1106,5 @@
     "shortName": "climacell",
     "categories": ["maps_and_weather"],
     "faviconExtension": "png"
-  },
-  {
-    "url": "https://darksky.net/",
-    "name": "Dark Sky",
-    "shortName": "dark_sky",
-    "categories": ["maps_and_weather"],
-    "faviconExtension": "ico"
   }
 ]
