@@ -105,9 +105,16 @@
     "faviconExtension": "ico"
   },
   {
-    "url": "https://jenkins/job/bcui-common-components/job/master/Storybook/",
-    "name": "Storybook",
+    "url": "https://jenkins-rl9.sirsi.pvt/job/bcui-common-components/job/master/Storybook/",
+    "name": "Common Storybook",
     "shortName": "storybook",
+    "categories": ["work"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://jenkins-rl9.sirsi.pvt/job/bcui-bcd-ui/job/master/Storybook/",
+    "name": "BCD Storybook",
+    "shortName": "bcd_storybook",
     "categories": ["work"],
     "faviconExtension": "ico"
   },
@@ -123,7 +130,7 @@
     "name": "Marvel Mockups",
     "shortName": "marvel_mockups",
     "categories": ["work"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "http://nexus.sirsi.pvt/",
@@ -284,7 +291,7 @@
     "name": "NPM Docs",
     "shortName": "npm_docs",
     "categories": ["documentation"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://classic.yarnpkg.com/en/docs/cli/install",
@@ -304,7 +311,7 @@
     "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes",
     "name": "MDN Web Docs",
     "shortName": "mdn_web_docs",
-    "categories": ["documentation"],
+    "categories": ["documentation", "for_developers"],
     "faviconExtension": "png"
   },
   {
@@ -399,11 +406,11 @@
     "faviconExtension": "png"
   },
   {
-    "url": "https://www.amazon.com/Amazon-Video/",
+    "url": "https://www.primevideo.com/",
     "name": "Amazon Prime Video",
     "shortName": "amazon_prime_video",
     "categories": ["streaming_services"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://www.disneyplus.com/",
@@ -448,13 +455,6 @@
     "faviconExtension": "ico"
   },
   {
-    "url": "https://comic.hackaday.com/",
-    "name": "Hackaday Comics",
-    "shortName": "hackaday_comics",
-    "categories": ["programming_humor"],
-    "faviconExtension": "ico"
-  },
-  {
     "url": "https://www.commitstrip.com/en/",
     "name": "CommitStrip",
     "shortName": "commitstrip",
@@ -473,7 +473,7 @@
     "name": "MuseScore",
     "shortName": "musescore",
     "categories": ["for_musicians"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://www.sheetmusicplus.com/",
@@ -515,7 +515,7 @@
     "name": "Reverb",
     "shortName": "reverb",
     "categories": ["for_musicians"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://www.tunecore.com/",
@@ -635,14 +635,14 @@
     "name": "The Wall Street Journal",
     "shortName": "the_wall_street_journal",
     "categories": ["news"],
-    "faviconExtension": "ico"
+    "faviconExtension": "svg"
   },
   {
     "url": "https://www.bloomberg.com/",
     "name": "Bloomberg",
     "shortName": "bloomberg",
     "categories": ["news"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://www.washingtonpost.com/",
@@ -691,7 +691,7 @@
     "name": "Skillshare",
     "shortName": "skillshare",
     "categories": ["e_learning"],
-    "faviconExtension": "ico"
+    "faviconExtension": "webp"
   },
   {
     "url": "https://www.codecademy.com/",
@@ -743,18 +743,11 @@
     "faviconExtension": "ico"
   },
   {
-    "url": "https://developer.mozilla.org/",
-    "name": "MDN Web Docs",
-    "shortName": "mdn_web_docs",
-    "categories": ["for_developers"],
-    "faviconExtension": "ico"
-  },
-  {
     "url": "https://codepen.io/",
     "name": "CodePen",
     "shortName": "codepen",
     "categories": ["for_developers"],
-    "faviconExtension": "ico"
+    "faviconExtension": "webp"
   },
   {
     "url": "https://www.geeksforgeeks.org/",
@@ -782,7 +775,7 @@
     "name": "HackerRank",
     "shortName": "hackerrank",
     "categories": ["for_developers"],
-    "faviconExtension": "ico"
+    "faviconExtension": "png"
   },
   {
     "url": "https://www.gitlab.com/",
