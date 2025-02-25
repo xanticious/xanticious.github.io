@@ -154,9 +154,23 @@
     "faviconExtension": "png"
   },
   {
-    "url": "https://teamx.dev.sirsidynix.net/admin",
-    "name": "TeamX",
-    "shortName": "teamx",
+    "url": "https://blackops.dev.sirsidynix.net/admin",
+    "name": "BlackOps (BCD)",
+    "shortName": "blackops",
+    "categories": ["environments"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://tsb.dev.sirsidynix.net/admin",
+    "name": "TSB (Lists)",
+    "shortName": "tsb",
+    "categories": ["environments"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://torchwood.dev.sirsidynix.net/admin",
+    "name": "Torchwood",
+    "shortName": "torchwood",
     "categories": ["environments"],
     "faviconExtension": "png"
   },
