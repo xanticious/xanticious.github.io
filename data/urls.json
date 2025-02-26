@@ -154,9 +154,23 @@
     "faviconExtension": "png"
   },
   {
-    "url": "https://blackops.dev.sirsidynix.net/admin",
+    "url": "https://blackops.dev.sirsidynix.net/bcd-ui",
     "name": "BlackOps (BCD)",
     "shortName": "blackops",
+    "categories": ["environments"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://blackops.dev.sirsidynix.net/admin",
+    "name": "BlackOps (Admin)",
+    "shortName": "blackops_admin",
+    "categories": ["environments"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://na3.bc.sirsidynix.net/bcd-ui",
+    "name": "NA3 (BCD)",
+    "shortName": "na3_bcd",
     "categories": ["environments"],
     "faviconExtension": "png"
   },
