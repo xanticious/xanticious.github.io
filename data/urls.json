@@ -70,6 +70,13 @@
     "faviconExtension": "ico"
   },
   {
+    "url": "https://harriscomputer.my.idaptive.app/",
+    "name": "Harris",
+    "shortName": "Harris",
+    "categories": ["work"],
+    "faviconExtension": "webp"
+  },
+  {
     "url": "https://jenkins/view/Knights/job/TeamXUpgrade/",
     "name": "Old Jenkins",
     "shortName": "old_jenkins",
