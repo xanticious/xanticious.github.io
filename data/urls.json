@@ -1,5 +1,19 @@
 [
   {
+    "url": "https://outlook.office.com/mail/",
+    "name": "Work Email",
+    "shortName": "work_email",
+    "categories": ["favorites", "work"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://outlook.office.com/calendar/view/week",
+    "name": "Work Calendar",
+    "shortName": "work_calendar",
+    "categories": ["favorites", "work"],
+    "faviconExtension": "ico"
+  },
+  {
     "url": "https://jira.sirsidynix.com/secure/RapidBoard.jspa?rapidView=367",
     "name": "Jira",
     "shortName": "jira",
