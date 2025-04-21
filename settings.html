@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background: #f4f4f4;
+      }
+      .settings-container {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        width: 300px;
+      }
+      .settings-container h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .settings-container label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+      .settings-container select {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid transparent;
+        border-right: 5px solid transparent;
+        border-radius: 4px;
+      }
+      .settings-container button {
+        width: 100%;
+        padding: 10px;
+        background: goldenrod;
+        border: none;
+        border-radius: 4px;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .settings-container button:hover {
+        background: darkgoldenrod;
+      }
+      select {
+        border-right: 12px solid transparent;
+      }
+      .select-container {
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="settings-container">
+      <h1>Settings</h1>
+      <label for="type">Type:</label>
+      <div class="select-container">
+        <select id="type">
+          <option value="Home">Home</option>
+          <option value="Work">Work</option>
+        </select>
+      </div>
+      <label for="style">Style:</label>
+      <div class="select-container">
+        <select id="style">
+          <option value="Modern">Modern</option>
+          <option value="Speed-Dial">Speed-Dial</option>
+          <option value="Pirate">Pirate</option>
+          <option value="Classic">Classic</option>
+          <option value="Minimal">Minimal</option>
+          <option value="Dark">Dark</option>
+          <option value="Light">Light</option>
+        </select>
+      </div>
+      <button onclick="saveSettings()">Save</button>
+    </div>
+    <script>
+      function saveSettings() {
+        const type = document.getElementById("type").value;
+        const style = document.getElementById("style").value;
+
+        const settings = { type, style };
+        localStorage.setItem("userSettings", JSON.stringify(settings));
+        window.location.href = "index-3.html";
+      }
+
+      function loadSettings() {
+        const savedSettings = JSON.parse(localStorage.getItem("userSettings"));
+        if (savedSettings) {
+          document.getElementById("type").value = savedSettings.type;
+          document.getElementById("style").value = savedSettings.style;
+        }
+      }
+
+      loadSettings();
+    </script>
+  </body>
+</html>

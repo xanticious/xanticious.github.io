@@ -11,85 +11,33 @@
       href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Cagliostro&display=swap"
       rel="stylesheet"
     />
-
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
-        background: url(images/wood_background.jpg) center/cover no-repeat;
-        background-attachment: fixed;
-        display: flex;
-        justify-content: center;
-        min-height: 100vh;
-        overflow-y: auto;
-        align-items: center;
-      }
-      .container {
-        background: url(images/parchment_texture.jpg) center/cover no-repeat;
-        padding: 40px;
-        border-radius: 4px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-        width: 80%;
-        max-width: 800px;
-        margin: 20px 0;
-        height: fit-content;
-      }
-      h2 {
-        text-align: center;
-        margin-bottom: 10px;
-        font-family: "Cagliostro", serif;
-        font-weight: 300;
-        font-style: normal;
-      }
-      .category {
-        margin-bottom: 15px;
-      }
-      .links {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
-        list-style: none;
-        padding: 0;
-        text-align: center;
-      }
-      @media (min-width: 1400px) {
-        .links {
-          grid-template-columns: repeat(4, 1fr);
-        }
-      }
-      .links li {
-        display: flex;
-        justify-content: center;
-      }
-      .links li a {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
-        margin: 2px;
-        outline: 3px solid goldenrod;
-        background: rgba(218, 165, 32, 0.2);
-        border-radius: 1px;
-        text-decoration: none;
-        color: #333;
-        transition: background 0.3s;
-      }
-      .links li a:hover {
-        background: rgba(218, 165, 32, 1);
-      }
-      .links li a img {
-        width: 16px;
-        height: 16px;
-        margin-right: 8px;
-      }
-    </style>
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
+    <button class="settings-button" onclick="navigateToSettings()"></button>
     <div id="container" class="container" />
 
     <script>
+      function navigateToSettings() {
+        window.location.href = "settings.html";
+      }
+
+      function loadSettings() {
+        const defaultSettings = { type: "Home", style: "Modern" };
+        const savedSettings =
+          JSON.parse(localStorage.getItem("userSettings")) || defaultSettings;
+
+        const { type, style } = savedSettings;
+
+        // Dynamically load the CSS file based on the style
+        const link = document.createElement("link");
+        link.rel = "stylesheet";
+        link.href = `/styles/${style.toLowerCase().replace("-", "_")}.css`;
+        document.head.appendChild(link);
+      }
+
+      loadSettings();
+
       async function loadData() {
         try {
           // Load JSON data
