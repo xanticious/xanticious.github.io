@@ -1,0 +1,1185 @@
+[
+  {
+    "url": "https://outlook.office.com/mail/",
+    "name": "Work Email",
+    "shortName": "work_email",
+    "categories": ["favorites", "work"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://outlook.office.com/calendar/view/week",
+    "name": "Work Calendar",
+    "shortName": "work_calendar",
+    "categories": ["favorites", "work"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://jira.sirsidynix.com/secure/RapidBoard.jspa?rapidView=367",
+    "name": "Jira",
+    "shortName": "jira",
+    "categories": ["favorites", "work"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://bitbucket.sirsi.pvt/projects/BCUI/repos/bcd-ui/browse",
+    "name": "BitBucket (Patron)",
+    "shortName": "bitbucket_patron",
+    "categories": ["favorites", "work"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://bitbucket.sirsi.pvt/projects/BCUI/repos/bcd-ui/browse",
+    "name": "BitBucket (BCD-UI)",
+    "shortName": "bitbucket_ui",
+    "categories": ["favorites", "work"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://collab.sirsi.pvt/pages/viewpage.action?pageId=138143633",
+    "name": "Confluence",
+    "shortName": "confluence",
+    "categories": ["favorites", "work"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://google.com/",
+    "name": "Google Search",
+    "shortName": "google_search",
+    "categories": ["tools"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://chatgpt.com/",
+    "name": "ChatGPT",
+    "shortName": "chatgpt",
+    "categories": ["tools"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://stackoverflow.com/",
+    "name": "Stack Overflow",
+    "shortName": "stack_overflow",
+    "categories": ["tools"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://excalidraw.com/",
+    "name": "Excalidraw",
+    "shortName": "excalidraw",
+    "categories": ["tools"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://wiredjs.com/",
+    "name": "WiredElements",
+    "shortName": "wiredelements",
+    "categories": ["tools"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://sirsidynix.zoom.us/j/2166302779",
+    "name": "Zoom (Phobos Standup)",
+    "shortName": "zoom_phobos_standup",
+    "categories": ["work"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://sirsidynix.zoom.us/j/99896748731",
+    "name": "Zoom (Phobos Room)",
+    "shortName": "zoom_phobos_room",
+    "categories": ["work"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://sirsidynix.zoom.us/my/courselists",
+    "name": "Zoom (Andy's)",
+    "shortName": "zoom_andys",
+    "categories": ["work"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://sirsidynix.zoom.us/my/search2",
+    "name": "Zoom (Craig's)",
+    "shortName": "zoom_craigs",
+    "categories": ["work"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "http://intranet/",
+    "name": "Intranet",
+    "shortName": "intranet",
+    "categories": ["work"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://harriscomputer.my.idaptive.app/",
+    "name": "Harris",
+    "shortName": "harris",
+    "categories": ["work"],
+    "faviconExtension": "webp"
+  },
+  {
+    "url": "https://jenkins/view/Knights/job/TeamXUpgrade/",
+    "name": "Old Jenkins",
+    "shortName": "old_jenkins",
+    "categories": ["work"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://jenkins-rl9.sirsi.pvt/view/bcui/job/bcui-bcd-ui/",
+    "name": "New Jenkins",
+    "shortName": "new_jenkins",
+    "categories": ["work"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://marvelapp.com/bhi8da4/screen/58437871bhi8da4/screen/58437871",
+    "name": "Style Guide",
+    "shortName": "style_guide",
+    "categories": ["work"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://jira.sirsidynix.com/secure/TimesheetReport.jspa?reportKey=jira-timesheet-plugin%3Areport&selectedProjectId=11752&reportingDay=1&startDate=2023-01-01&endDate=2023-02-09&targetUser=anthony.litchfield&projectRoleId=&filterid=&priority=&commentfirstword=&weekends=true&showDetails=true&sum=day&groupByField=&sortBy=&sortDir=ASC&Next=Next",
+    "name": "Time Log Report",
+    "shortName": "time_log_report",
+    "categories": ["work"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "http://jsds-splunk-server.bcc.sirsi.pvt:8000/en-US/app/search/search?q=search%20host%3D%22teamx*%22%20NOT%20%22healthcheck%2Falive%22%20NOT%20%22actuator%2Fhealth%22%20NOT%20%22status%2Fhealth%22&display.page.search.mode=smart&dispatch.sample_ratio=1&earliest=-60m%40m&latest=now&display.general.type=events&display.visualizations.charting.chart=bar&display.page.search.tab=events&sid=1572033568.13838",
+    "name": "Engineering Splunk",
+    "shortName": "engineering_splunk",
+    "categories": ["work"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://splunk1.sirsi.net:8000/en-US/account/login",
+    "name": "Production Splunk",
+    "shortName": "production_splunk",
+    "categories": ["work"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://jenkins-rl9.sirsi.pvt/job/bcui-common-components/job/master/Storybook/",
+    "name": "Common Storybook",
+    "shortName": "storybook",
+    "categories": ["work"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://jenkins-rl9.sirsi.pvt/job/bcui-bcd-ui/job/master/Storybook/",
+    "name": "BCD Storybook",
+    "shortName": "bcd_storybook",
+    "categories": ["work"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://collab.sirsi.pvt/pages/viewpage.action?pageId=41913309",
+    "name": "Jira Templates",
+    "shortName": "jira_templates",
+    "categories": ["work"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://marvelapp.com/projects/my",
+    "name": "Marvel Mockups",
+    "shortName": "marvel_mockups",
+    "categories": ["work"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "http://nexus.sirsi.pvt/",
+    "name": "Nexus",
+    "shortName": "nexus",
+    "categories": ["work"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://bogus.sirsidynix.com/admin/",
+    "name": "Bogus",
+    "shortName": "bogus",
+    "categories": ["environments"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://blackops.dev.sirsidynix.net/bcd-ui",
+    "name": "BlackOps (BCD)",
+    "shortName": "blackops",
+    "categories": ["environments"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://blackops.dev.sirsidynix.net/admin",
+    "name": "BlackOps (Admin)",
+    "shortName": "blackops_admin",
+    "categories": ["environments"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://na3.bc.sirsidynix.net/bcd-ui",
+    "name": "NA3 (BCD)",
+    "shortName": "na3_bcd",
+    "categories": ["environments"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://tsb.dev.sirsidynix.net/admin",
+    "name": "TSB (Lists)",
+    "shortName": "tsb",
+    "categories": ["environments"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://torchwood.dev.sirsidynix.net/admin",
+    "name": "Torchwood",
+    "shortName": "torchwood",
+    "categories": ["environments"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://preprod.bc.sirsidynix.net/admin",
+    "name": "Pre-Prod",
+    "shortName": "pre-prod",
+    "categories": ["environments"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://patch-prod.dev.sirsidynix.net/admin",
+    "name": "Patch-Prod",
+    "shortName": "patch-prod",
+    "categories": ["environments"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://apac1.bc.sirsidynix.net.au/admin",
+    "name": "APAC",
+    "shortName": "apac",
+    "categories": ["environments"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://can1.bc.sirsidynix.net/admin",
+    "name": "CAN1",
+    "shortName": "can1",
+    "categories": ["environments"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://emea1.bc.sirsidynix.net.uk/admin",
+    "name": "EMEA1",
+    "shortName": "emea1",
+    "categories": ["environments"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://na1.bc.sirsidynix.net/admin",
+    "name": "NA1",
+    "shortName": "na1",
+    "categories": ["environments"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://na2.bc.sirsidynix.net/admin",
+    "name": "NA2",
+    "shortName": "na2",
+    "categories": ["environments"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://na3.bc.sirsidynix.net/admin",
+    "name": "NA3",
+    "shortName": "na3",
+    "categories": ["environments"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://sg1.bc.sirsidynix.sg/admin",
+    "name": "SG1",
+    "shortName": "sg1",
+    "categories": ["environments"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://beta.sales.sirsidynix.net/admin",
+    "name": "Beta Sales",
+    "shortName": "beta_sales",
+    "categories": ["environments"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://prod.sales.sirsidynix.net/admin",
+    "name": "Prod Sales",
+    "shortName": "prod_sales",
+    "categories": ["environments"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://apactest.bc.sirsidynix.net.au/admin",
+    "name": "APAC Test",
+    "shortName": "apac_test",
+    "categories": ["environments"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://emeatest.bc.sirsidynix.net.uk/admin",
+    "name": "EMEA Test",
+    "shortName": "emea_test",
+    "categories": ["environments"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://noamtest.bc.sirsidynix.net/admin",
+    "name": "NOAM Test",
+    "shortName": "noam_test",
+    "categories": ["environments"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://docs.sencha.com/extjs/4.2.1/#!/api/Ext.grid.Panel",
+    "name": "ExtJS Docs",
+    "shortName": "extjs_docs",
+    "categories": ["documentation"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "http://docs.deftjs.org/deft-js/0.9.1/#!/api/Deft.promise.Deferred",
+    "name": "DeftJS Docs",
+    "shortName": "deftjs_docs",
+    "categories": ["documentation"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://reactjs.org/docs/hooks-reference.html",
+    "name": "React Docs",
+    "shortName": "react_docs",
+    "categories": ["documentation"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://jestjs.io/docs/en/mock-function-api",
+    "name": "Jest Docs",
+    "shortName": "jest_docs",
+    "categories": ["documentation"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://airbnb.io/enzyme/docs/api/ShallowWrapper/find.html",
+    "name": "Enzyme Docs",
+    "shortName": "enzyme_docs",
+    "categories": ["documentation"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://docs.npmjs.com/cli-documentation/",
+    "name": "NPM Docs",
+    "shortName": "npm_docs",
+    "categories": ["documentation"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://classic.yarnpkg.com/en/docs/cli/install",
+    "name": "Yarn Docs",
+    "shortName": "yarn_docs",
+    "categories": ["documentation"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://lodash.com/docs/",
+    "name": "Lodash Docs",
+    "shortName": "lodash_docs",
+    "categories": ["documentation"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes",
+    "name": "MDN Web Docs",
+    "shortName": "mdn_web_docs",
+    "categories": ["documentation", "for_developers"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://github.com/apereo/cas",
+    "name": "Apereo CAS GitHub",
+    "shortName": "apereo_cas_github",
+    "categories": ["documentation"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://www.dcode.fr/word-search-regexp",
+    "name": "Regex Dictionary",
+    "shortName": "regex_dictionary",
+    "categories": ["word_games"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://www.bestwordlist.com/c/q/1/5letterwordswithq.htm",
+    "name": "Best Word List",
+    "shortName": "best_word_list",
+    "categories": ["word_games"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://wordplay.com/new",
+    "name": "Wordplay Wordle",
+    "shortName": "wordplay_wordle",
+    "categories": ["word_games"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://qntm.org/files/absurdle/absurdle.html",
+    "name": "Absurdle",
+    "shortName": "absurdle",
+    "categories": ["word_games"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://crosswordle.serializer.ca/",
+    "name": "Crosswordle",
+    "shortName": "crosswordle",
+    "categories": ["word_games"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://www.sedecordle.com/",
+    "name": "Sedecordle",
+    "shortName": "sedecordle",
+    "categories": ["word_games"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://globle-game.com/",
+    "name": "Globle",
+    "shortName": "globle",
+    "categories": ["word_games"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://www.wordplays.com/wordgames/text-twist",
+    "name": "Text Twist",
+    "shortName": "text_twist",
+    "categories": ["word_games"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://www.wordplays.com/help/boggle/",
+    "name": "Boggle",
+    "shortName": "boggle",
+    "categories": ["word_games"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://www.youtube.com/",
+    "name": "YouTube",
+    "shortName": "youtube",
+    "categories": ["streaming_services"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://www.netflix.com/",
+    "name": "Netflix",
+    "shortName": "netflix",
+    "categories": ["streaming_services"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://www.hulu.com/",
+    "name": "Hulu",
+    "shortName": "hulu",
+    "categories": ["streaming_services"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://www.primevideo.com/",
+    "name": "Amazon Prime Video",
+    "shortName": "amazon_prime_video",
+    "categories": ["streaming_services"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://www.disneyplus.com/",
+    "name": "Disney+",
+    "shortName": "disney+",
+    "categories": ["streaming_services"],
+    "faviconExtension": "svg"
+  },
+  {
+    "url": "https://www.max.com/",
+    "name": "Max",
+    "shortName": "max",
+    "categories": ["streaming_services"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://www.paramountplus.com/",
+    "name": "Paramount+",
+    "shortName": "paramount+",
+    "categories": ["streaming_services"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://www.peacocktv.com/",
+    "name": "Peacock",
+    "shortName": "peacock",
+    "categories": ["streaming_services"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://tv.apple.com/",
+    "name": "Apple TV+",
+    "shortName": "apple_tv+",
+    "categories": ["streaming_services"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://xkcd.com/",
+    "name": "xkcd",
+    "shortName": "xkcd",
+    "categories": ["programming_humor"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://www.commitstrip.com/en/",
+    "name": "CommitStrip",
+    "shortName": "commitstrip",
+    "categories": ["programming_humor"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://thedailywtf.com/",
+    "name": "The Daily WTF",
+    "shortName": "the_daily_wtf",
+    "categories": ["programming_humor"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://musescore.com/",
+    "name": "MuseScore",
+    "shortName": "musescore",
+    "categories": ["for_musicians"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://www.sheetmusicplus.com/",
+    "name": "Sheet Music Plus",
+    "shortName": "sheet_music_plus",
+    "categories": ["for_musicians"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://www.soundcloud.com/",
+    "name": "SoundCloud",
+    "shortName": "soundcloud",
+    "categories": ["for_musicians"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://www.noteflight.com/",
+    "name": "Noteflight",
+    "shortName": "noteflight",
+    "categories": ["for_musicians"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://imslp.org/",
+    "name": "IMSLP Petrucci Music Library",
+    "shortName": "imslp_petrucci_music_library",
+    "categories": ["for_musicians"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://www.songsterr.com/",
+    "name": "Songsterr",
+    "shortName": "songsterr",
+    "categories": ["for_musicians"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://reverb.com/",
+    "name": "Reverb",
+    "shortName": "reverb",
+    "categories": ["for_musicians"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://www.tunecore.com/",
+    "name": "TuneCore",
+    "shortName": "tunecore",
+    "categories": ["for_musicians"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://www.amazon.com/",
+    "name": "Amazon",
+    "shortName": "amazon",
+    "categories": ["shopping"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://www.walmart.com/",
+    "name": "Walmart",
+    "shortName": "walmart",
+    "categories": ["shopping"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://www.target.com/",
+    "name": "Target",
+    "shortName": "target",
+    "categories": ["shopping"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://www.newegg.com/",
+    "name": "Newegg",
+    "shortName": "newegg",
+    "categories": ["shopping"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://open.spotify.com/",
+    "name": "Spotify",
+    "shortName": "spotify",
+    "categories": ["streaming_music"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://www.youtube.com/music/",
+    "name": "YouTube Music",
+    "shortName": "youtube_music",
+    "categories": ["streaming_music"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://music.apple.com/",
+    "name": "Apple Music",
+    "shortName": "apple_music",
+    "categories": ["streaming_music"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://www.pandora.com/",
+    "name": "Pandora",
+    "shortName": "pandora",
+    "categories": ["streaming_music"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://www.npr.org/",
+    "name": "NPR",
+    "shortName": "npr",
+    "categories": ["news"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://www.bbc.com/",
+    "name": "BBC",
+    "shortName": "bbc",
+    "categories": ["news"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://www.nytimes.com/",
+    "name": "The New York Times",
+    "shortName": "the_new_york_times",
+    "categories": ["news"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://www.reuters.com/",
+    "name": "Reuters",
+    "shortName": "reuters",
+    "categories": ["news"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://www.theguardian.com/",
+    "name": "The Guardian",
+    "shortName": "the_guardian",
+    "categories": ["news"],
+    "faviconExtension": "svg"
+  },
+  {
+    "url": "https://www.cnn.com/",
+    "name": "CNN",
+    "shortName": "cnn",
+    "categories": ["news"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://www.aljazeera.com/",
+    "name": "Al Jazeera",
+    "shortName": "al_jazeera",
+    "categories": ["news"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://www.wsj.com/",
+    "name": "The Wall Street Journal",
+    "shortName": "the_wall_street_journal",
+    "categories": ["news"],
+    "faviconExtension": "svg"
+  },
+  {
+    "url": "https://www.bloomberg.com/",
+    "name": "Bloomberg",
+    "shortName": "bloomberg",
+    "categories": ["news"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://www.washingtonpost.com/",
+    "name": "The Washington Post",
+    "shortName": "the_washington_post",
+    "categories": ["news"],
+    "faviconExtension": "svg"
+  },
+  {
+    "url": "https://www.coursera.org/",
+    "name": "Coursera",
+    "shortName": "coursera",
+    "categories": ["e_learning"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://www.udemy.com/",
+    "name": "Udemy",
+    "shortName": "udemy",
+    "categories": ["e_learning"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://www.khanacademy.org/",
+    "name": "Khan Academy",
+    "shortName": "khan_academy",
+    "categories": ["e_learning"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://www.edx.org/",
+    "name": "edX",
+    "shortName": "edx",
+    "categories": ["e_learning"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://ocw.mit.edu/",
+    "name": "MIT OpenCourseWare",
+    "shortName": "mit_opencourseware",
+    "categories": ["e_learning"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://www.skillshare.com/",
+    "name": "Skillshare",
+    "shortName": "skillshare",
+    "categories": ["e_learning"],
+    "faviconExtension": "webp"
+  },
+  {
+    "url": "https://www.codecademy.com/",
+    "name": "Codecademy",
+    "shortName": "codecademy",
+    "categories": ["e_learning"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://www.futurelearn.com/",
+    "name": "FutureLearn",
+    "shortName": "futurelearn",
+    "categories": ["e_learning"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://www.pluralsight.com/",
+    "name": "Pluralsight",
+    "shortName": "pluralsight",
+    "categories": ["e_learning"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://www.teachable.com/",
+    "name": "Teachable",
+    "shortName": "teachable",
+    "categories": ["e_learning"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://github.com/",
+    "name": "GitHub",
+    "shortName": "github",
+    "categories": ["for_developers"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://stackoverflow.com/",
+    "name": "Stack Overflow",
+    "shortName": "stack_overflow",
+    "categories": ["for_developers"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://www.w3schools.com/",
+    "name": "W3Schools",
+    "shortName": "w3schools",
+    "categories": ["for_developers"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://codepen.io/",
+    "name": "CodePen",
+    "shortName": "codepen",
+    "categories": ["for_developers"],
+    "faviconExtension": "webp"
+  },
+  {
+    "url": "https://www.geeksforgeeks.org/",
+    "name": "GeeksforGeeks",
+    "shortName": "geeksforgeeks",
+    "categories": ["for_developers"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://www.jetbrains.com/",
+    "name": "JetBrains",
+    "shortName": "jetbrains",
+    "categories": ["for_developers"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://www.freecodecamp.org/",
+    "name": "freeCodeCamp",
+    "shortName": "freecodecamp",
+    "categories": ["for_developers"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://www.hackerrank.com/",
+    "name": "HackerRank",
+    "shortName": "hackerrank",
+    "categories": ["for_developers"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://www.gitlab.com/",
+    "name": "GitLab",
+    "shortName": "gitlab",
+    "categories": ["for_developers"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://www.myresearch.org/",
+    "name": "MyResearch",
+    "shortName": "myresearch",
+    "categories": ["for_researchers"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://www.myscience.org/",
+    "name": "MyScience",
+    "shortName": "myscience",
+    "categories": ["for_researchers"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://www.sciencedirect.com/",
+    "name": "ScienceDirect",
+    "shortName": "sciencedirect",
+    "categories": ["for_researchers"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://www.nature.com/",
+    "name": "Nature",
+    "shortName": "nature",
+    "categories": ["for_researchers"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://www.science.org/",
+    "name": "Science",
+    "shortName": "science",
+    "categories": ["for_researchers"],
+    "faviconExtension": "webp"
+  },
+  {
+    "url": "https://www.researchgate.net/",
+    "name": "ResearchGate",
+    "shortName": "researchgate",
+    "categories": ["for_researchers"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://www.acs.org/",
+    "name": "American Chemical Society",
+    "shortName": "american_chemical_society",
+    "categories": ["for_researchers"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://pubmed.ncbi.nlm.nih.gov/",
+    "name": "PubMed",
+    "shortName": "pubmed",
+    "categories": ["for_researchers"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://www.jstor.org/",
+    "name": "JSTOR",
+    "shortName": "jstor",
+    "categories": ["for_researchers"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://www.springer.com/",
+    "name": "Springer",
+    "shortName": "springer",
+    "categories": ["for_researchers"],
+    "faviconExtension": "svg"
+  },
+  {
+    "url": "https://www.smithsonianmag.com/",
+    "name": "Smithsonian",
+    "shortName": "smithsonian",
+    "categories": ["for_researchers"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://www.techcrunch.com/",
+    "name": "TechCrunch",
+    "shortName": "techcrunch",
+    "categories": ["tech"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://www.wired.com/",
+    "name": "Wired",
+    "shortName": "wired",
+    "categories": ["tech"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://www.theverge.com/",
+    "name": "The Verge",
+    "shortName": "the_verge",
+    "categories": ["tech"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://www.cnet.com/",
+    "name": "CNET",
+    "shortName": "cnet",
+    "categories": ["tech"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://www.engadget.com/",
+    "name": "Engadget",
+    "shortName": "engadget",
+    "categories": ["tech"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://www.tomshardware.com/",
+    "name": "Tom's Hardware",
+    "shortName": "toms_hardware",
+    "categories": ["tech"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://www.facebook.com/",
+    "name": "Facebook",
+    "shortName": "facebook",
+    "categories": ["social_media"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://twitter.com/",
+    "name": "Twitter",
+    "shortName": "twitter",
+    "categories": ["social_media"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://www.instagram.com/",
+    "name": "Instagram",
+    "shortName": "instagram",
+    "categories": ["social_media"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://www.linkedin.com/",
+    "name": "LinkedIn",
+    "shortName": "linkedin",
+    "categories": ["social_media"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://www.snapchat.com/",
+    "name": "Snapchat",
+    "shortName": "snapchat",
+    "categories": ["social_media"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://www.pinterest.com/",
+    "name": "Pinterest",
+    "shortName": "pinterest",
+    "categories": ["social_media"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://www.reddit.com/",
+    "name": "Reddit",
+    "shortName": "reddit",
+    "categories": ["social_media"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://www.tumblr.com/",
+    "name": "Tumblr",
+    "shortName": "tumblr",
+    "categories": ["social_media"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://www.tiktok.com/",
+    "name": "TikTok",
+    "shortName": "tiktok",
+    "categories": ["social_media"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://www.whatsapp.com/",
+    "name": "WhatsApp",
+    "shortName": "whatsapp",
+    "categories": ["social_media"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://stablediffusionweb.com/",
+    "name": "Stable Diffusion",
+    "shortName": "stable_diffusion",
+    "categories": ["ai"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://huggingface.co/",
+    "name": "Hugging Face",
+    "shortName": "hugging_face",
+    "categories": ["ai"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://chat.openai.com/",
+    "name": "ChatGPT",
+    "shortName": "chatgpt",
+    "categories": ["ai"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://github.com/copilot",
+    "name": "GitHub Copilot",
+    "shortName": "github_copilot",
+    "categories": ["ai"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://www.runwayml.com/",
+    "name": "RunwayML",
+    "shortName": "runwayml",
+    "categories": ["ai"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://www.artbreeder.com/",
+    "name": "Artbreeder",
+    "shortName": "artbreeder",
+    "categories": ["ai"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://deepdreamgenerator.com/",
+    "name": "Deep Dream Generator",
+    "shortName": "deep_dream_generator",
+    "categories": ["ai"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://www.nightcafe.studio/",
+    "name": "NightCafe Studio",
+    "shortName": "nightcafe_studio",
+    "categories": ["ai"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://www.playgroundai.com/",
+    "name": "Playground AI",
+    "shortName": "playground_ai",
+    "categories": ["ai"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://www.google.com/maps",
+    "name": "Google Maps",
+    "shortName": "google_maps",
+    "categories": ["maps_and_weather"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://www.weather.com/",
+    "name": "The Weather Channel",
+    "shortName": "the_weather_channel",
+    "categories": ["maps_and_weather"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://www.accuweather.com/",
+    "name": "AccuWeather",
+    "shortName": "accuweather",
+    "categories": ["maps_and_weather"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://www.wunderground.com/",
+    "name": "Weather Underground",
+    "shortName": "weather_underground",
+    "categories": ["maps_and_weather"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://www.mapquest.com/",
+    "name": "MapQuest",
+    "shortName": "mapquest",
+    "categories": ["maps_and_weather"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://www.openstreetmap.org/",
+    "name": "OpenStreetMap",
+    "shortName": "openstreetmap",
+    "categories": ["maps_and_weather"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://www.windfinder.com/",
+    "name": "Windfinder",
+    "shortName": "windfinder",
+    "categories": ["maps_and_weather"],
+    "faviconExtension": "ico"
+  },
+  {
+    "url": "https://www.yr.no/",
+    "name": "YR.no",
+    "shortName": "yr_no",
+    "categories": ["maps_and_weather"],
+    "faviconExtension": "png"
+  },
+  {
+    "url": "https://www.climacell.co/",
+    "name": "ClimaCell",
+    "shortName": "climacell",
+    "categories": ["maps_and_weather"],
+    "faviconExtension": "png"
+  }
+]

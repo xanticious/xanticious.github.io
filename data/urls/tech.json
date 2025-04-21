@@ -1,0 +1,41 @@
+{
+  "category": "tech",
+  "urls": [
+    {
+      "url": "https://www.techcrunch.com/",
+      "name": "TechCrunch",
+      "shortName": "techcrunch",
+      "faviconExtension": "png"
+    },
+    {
+      "url": "https://www.wired.com/",
+      "name": "Wired",
+      "shortName": "wired",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://www.theverge.com/",
+      "name": "The Verge",
+      "shortName": "the_verge",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://www.cnet.com/",
+      "name": "CNET",
+      "shortName": "cnet",
+      "faviconExtension": "png"
+    },
+    {
+      "url": "https://www.engadget.com/",
+      "name": "Engadget",
+      "shortName": "engadget",
+      "faviconExtension": "png"
+    },
+    {
+      "url": "https://www.tomshardware.com/",
+      "name": "Tom's Hardware",
+      "shortName": "toms_hardware",
+      "faviconExtension": "png"
+    }
+  ]
+}

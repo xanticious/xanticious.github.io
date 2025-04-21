@@ -1,0 +1,71 @@
+{
+  "category": "for_researchers",
+  "urls": [
+    {
+      "url": "https://www.myresearch.org/",
+      "name": "MyResearch",
+      "shortName": "myresearch",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://www.myscience.org/",
+      "name": "MyScience",
+      "shortName": "myscience",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://www.sciencedirect.com/",
+      "name": "ScienceDirect",
+      "shortName": "sciencedirect",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://www.nature.com/",
+      "name": "Nature",
+      "shortName": "nature",
+      "faviconExtension": "png"
+    },
+    {
+      "url": "https://www.science.org/",
+      "name": "Science",
+      "shortName": "science",
+      "faviconExtension": "webp"
+    },
+    {
+      "url": "https://www.researchgate.net/",
+      "name": "ResearchGate",
+      "shortName": "researchgate",
+      "faviconExtension": "png"
+    },
+    {
+      "url": "https://www.acs.org/",
+      "name": "American Chemical Society",
+      "shortName": "american_chemical_society",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "name": "PubMed",
+      "shortName": "pubmed",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://www.jstor.org/",
+      "name": "JSTOR",
+      "shortName": "jstor",
+      "faviconExtension": "png"
+    },
+    {
+      "url": "https://www.springer.com/",
+      "name": "Springer",
+      "shortName": "springer",
+      "faviconExtension": "svg"
+    },
+    {
+      "url": "https://www.smithsonianmag.com/",
+      "name": "Smithsonian",
+      "shortName": "smithsonian",
+      "faviconExtension": "ico"
+    }
+  ]
+}

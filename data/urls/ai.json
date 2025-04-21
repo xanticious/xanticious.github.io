@@ -1,0 +1,59 @@
+{
+  "category": "ai",
+  "urls": [
+    {
+      "url": "https://stablediffusionweb.com/",
+      "name": "Stable Diffusion",
+      "shortName": "stable_diffusion",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://huggingface.co/",
+      "name": "Hugging Face",
+      "shortName": "hugging_face",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://chat.openai.com/",
+      "name": "ChatGPT",
+      "shortName": "chatgpt",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://github.com/copilot",
+      "name": "GitHub Copilot",
+      "shortName": "github_copilot",
+      "faviconExtension": "png"
+    },
+    {
+      "url": "https://www.runwayml.com/",
+      "name": "RunwayML",
+      "shortName": "runwayml",
+      "faviconExtension": "png"
+    },
+    {
+      "url": "https://www.artbreeder.com/",
+      "name": "Artbreeder",
+      "shortName": "artbreeder",
+      "faviconExtension": "png"
+    },
+    {
+      "url": "https://deepdreamgenerator.com/",
+      "name": "Deep Dream Generator",
+      "shortName": "deep_dream_generator",
+      "faviconExtension": "png"
+    },
+    {
+      "url": "https://www.nightcafe.studio/",
+      "name": "NightCafe Studio",
+      "shortName": "nightcafe_studio",
+      "faviconExtension": "png"
+    },
+    {
+      "url": "https://www.playgroundai.com/",
+      "name": "Playground AI",
+      "shortName": "playground_ai",
+      "faviconExtension": "ico"
+    }
+  ]
+}

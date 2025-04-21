@@ -1,0 +1,23 @@
+{
+  "category": "programming_humor",
+  "urls": [
+    {
+      "url": "https://xkcd.com/",
+      "name": "xkcd",
+      "shortName": "xkcd",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://www.commitstrip.com/en/",
+      "name": "CommitStrip",
+      "shortName": "commitstrip",
+      "faviconExtension": "png"
+    },
+    {
+      "url": "https://thedailywtf.com/",
+      "name": "The Daily WTF",
+      "shortName": "the_daily_wtf",
+      "faviconExtension": "ico"
+    }
+  ]
+}

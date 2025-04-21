@@ -1,0 +1,53 @@
+{
+  "category": "for_musicians",
+  "urls": [
+    {
+      "url": "https://musescore.com/",
+      "name": "MuseScore",
+      "shortName": "musescore",
+      "faviconExtension": "png"
+    },
+    {
+      "url": "https://www.sheetmusicplus.com/",
+      "name": "Sheet Music Plus",
+      "shortName": "sheet_music_plus",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://www.soundcloud.com/",
+      "name": "SoundCloud",
+      "shortName": "soundcloud",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://www.noteflight.com/",
+      "name": "Noteflight",
+      "shortName": "noteflight",
+      "faviconExtension": "png"
+    },
+    {
+      "url": "https://imslp.org/",
+      "name": "IMSLP Petrucci Music Library",
+      "shortName": "imslp_petrucci_music_library",
+      "faviconExtension": "png"
+    },
+    {
+      "url": "https://www.songsterr.com/",
+      "name": "Songsterr",
+      "shortName": "songsterr",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://reverb.com/",
+      "name": "Reverb",
+      "shortName": "reverb",
+      "faviconExtension": "png"
+    },
+    {
+      "url": "https://www.tunecore.com/",
+      "name": "TuneCore",
+      "shortName": "tunecore",
+      "faviconExtension": "ico"
+    }
+  ]
+}

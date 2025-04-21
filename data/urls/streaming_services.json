@@ -1,0 +1,60 @@
+{
+  "category": "streaming_services",
+  "urls": [
+    {
+      "url": "https://www.youtube.com/",
+      "name": "YouTube",
+      "shortName": "youtube",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://www.netflix.com/",
+      "name": "Netflix",
+      "shortName": "netflix",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://www.hulu.com/",
+      "name": "Hulu",
+      "shortName": "hulu",
+      "faviconExtension": "png"
+    },
+    {
+      "url": "https://www.primevideo.com/",
+      "name": "Amazon Prime Video",
+      "shortName": "amazon_prime_video",
+      "faviconExtension": "png"
+    },
+    {
+      "url": "https://www.disneyplus.com/",
+      "name": "Disney+",
+      "shortName": "disney+",
+      "faviconExtension": "svg"
+    },
+    {
+      "url": "https://www.max.com/",
+      "name": "Max",
+      "shortName": "max",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://www.paramountplus.com/",
+      "name": "Paramount+",
+      "shortName": "paramount+",
+      "categories": ["streaming_services"],
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://www.peacocktv.com/",
+      "name": "Peacock",
+      "shortName": "peacock",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://tv.apple.com/",
+      "name": "Apple TV+",
+      "shortName": "apple_tv+",
+      "faviconExtension": "png"
+    }
+  ]
+}

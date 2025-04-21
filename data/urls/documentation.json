@@ -1,0 +1,65 @@
+{
+  "category": "documentation",
+  "urls": [
+    {
+      "url": "https://docs.sencha.com/extjs/4.2.1/#!/api/Ext.grid.Panel",
+      "name": "ExtJS Docs",
+      "shortName": "extjs_docs",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "http://docs.deftjs.org/deft-js/0.9.1/#!/api/Deft.promise.Deferred",
+      "name": "DeftJS Docs",
+      "shortName": "deftjs_docs",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://reactjs.org/docs/hooks-reference.html",
+      "name": "React Docs",
+      "shortName": "react_docs",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://jestjs.io/docs/en/mock-function-api",
+      "name": "Jest Docs",
+      "shortName": "jest_docs",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://airbnb.io/enzyme/docs/api/ShallowWrapper/find.html",
+      "name": "Enzyme Docs",
+      "shortName": "enzyme_docs",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://docs.npmjs.com/cli-documentation/",
+      "name": "NPM Docs",
+      "shortName": "npm_docs",
+      "faviconExtension": "png"
+    },
+    {
+      "url": "https://classic.yarnpkg.com/en/docs/cli/install",
+      "name": "Yarn Docs",
+      "shortName": "yarn_docs",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://lodash.com/docs/",
+      "name": "Lodash Docs",
+      "shortName": "lodash_docs",
+      "faviconExtension": "png"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes",
+      "name": "MDN Web Docs",
+      "shortName": "mdn_web_docs",
+      "faviconExtension": "png"
+    },
+    {
+      "url": "https://github.com/apereo/cas",
+      "name": "Apereo CAS GitHub",
+      "shortName": "apereo_cas_github",
+      "faviconExtension": "ico"
+    }
+  ]
+}

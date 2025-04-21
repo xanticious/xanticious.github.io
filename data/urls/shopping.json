@@ -1,0 +1,29 @@
+{
+  "category": "shopping",
+  "urls": [
+    {
+      "url": "https://www.amazon.com/",
+      "name": "Amazon",
+      "shortName": "amazon",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://www.walmart.com/",
+      "name": "Walmart",
+      "shortName": "walmart",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://www.target.com/",
+      "name": "Target",
+      "shortName": "target",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://www.newegg.com/",
+      "name": "Newegg",
+      "shortName": "newegg",
+      "faviconExtension": "ico"
+    }
+  ]
+}

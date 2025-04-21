@@ -1,0 +1,59 @@
+{
+  "category": "maps_and_weather",
+  "urls": [
+    {
+      "url": "https://www.google.com/maps",
+      "name": "Google Maps",
+      "shortName": "google_maps",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://www.weather.com/",
+      "name": "The Weather Channel",
+      "shortName": "the_weather_channel",
+      "faviconExtension": "png"
+    },
+    {
+      "url": "https://www.accuweather.com/",
+      "name": "AccuWeather",
+      "shortName": "accuweather",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://www.wunderground.com/",
+      "name": "Weather Underground",
+      "shortName": "weather_underground",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://www.mapquest.com/",
+      "name": "MapQuest",
+      "shortName": "mapquest",
+      "faviconExtension": "png"
+    },
+    {
+      "url": "https://www.openstreetmap.org/",
+      "name": "OpenStreetMap",
+      "shortName": "openstreetmap",
+      "faviconExtension": "png"
+    },
+    {
+      "url": "https://www.windfinder.com/",
+      "name": "Windfinder",
+      "shortName": "windfinder",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://www.yr.no/",
+      "name": "YR.no",
+      "shortName": "yr_no",
+      "faviconExtension": "png"
+    },
+    {
+      "url": "https://www.climacell.co/",
+      "name": "ClimaCell",
+      "shortName": "climacell",
+      "faviconExtension": "png"
+    }
+  ]
+}

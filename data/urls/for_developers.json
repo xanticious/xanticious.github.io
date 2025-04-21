@@ -1,0 +1,65 @@
+{
+  "category": "for_developers",
+  "urls": [
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes",
+      "name": "MDN Web Docs",
+      "shortName": "mdn_web_docs",
+      "faviconExtension": "png"
+    },
+    {
+      "url": "https://github.com/",
+      "name": "GitHub",
+      "shortName": "github",
+      "faviconExtension": "png"
+    },
+    {
+      "url": "https://stackoverflow.com/",
+      "name": "Stack Overflow",
+      "shortName": "stack_overflow",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://www.w3schools.com/",
+      "name": "W3Schools",
+      "shortName": "w3schools",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://codepen.io/",
+      "name": "CodePen",
+      "shortName": "codepen",
+      "faviconExtension": "webp"
+    },
+    {
+      "url": "https://www.geeksforgeeks.org/",
+      "name": "GeeksforGeeks",
+      "shortName": "geeksforgeeks",
+      "faviconExtension": "png"
+    },
+    {
+      "url": "https://www.jetbrains.com/",
+      "name": "JetBrains",
+      "shortName": "jetbrains",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://www.freecodecamp.org/",
+      "name": "freeCodeCamp",
+      "shortName": "freecodecamp",
+      "faviconExtension": "png"
+    },
+    {
+      "url": "https://www.hackerrank.com/",
+      "name": "HackerRank",
+      "shortName": "hackerrank",
+      "faviconExtension": "png"
+    },
+    {
+      "url": "https://www.gitlab.com/",
+      "name": "GitLab",
+      "shortName": "gitlab",
+      "faviconExtension": "ico"
+    }
+  ]
+}

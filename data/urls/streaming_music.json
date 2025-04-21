@@ -1,0 +1,29 @@
+{
+  "category": "streaming_music",
+  "urls": [
+    {
+      "url": "https://open.spotify.com/",
+      "name": "Spotify",
+      "shortName": "spotify",
+      "faviconExtension": "png"
+    },
+    {
+      "url": "https://www.youtube.com/music/",
+      "name": "YouTube Music",
+      "shortName": "youtube_music",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://music.apple.com/",
+      "name": "Apple Music",
+      "shortName": "apple_music",
+      "faviconExtension": "png"
+    },
+    {
+      "url": "https://www.pandora.com/",
+      "name": "Pandora",
+      "shortName": "pandora",
+      "faviconExtension": "ico"
+    }
+  ]
+}

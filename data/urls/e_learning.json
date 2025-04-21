@@ -1,0 +1,65 @@
+{
+  "category": "e_learning",
+  "urls": [
+    {
+      "url": "https://www.coursera.org/",
+      "name": "Coursera",
+      "shortName": "coursera",
+      "faviconExtension": "png"
+    },
+    {
+      "url": "https://www.udemy.com/",
+      "name": "Udemy",
+      "shortName": "udemy",
+      "faviconExtension": "png"
+    },
+    {
+      "url": "https://www.khanacademy.org/",
+      "name": "Khan Academy",
+      "shortName": "khan_academy",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://www.edx.org/",
+      "name": "edX",
+      "shortName": "edx",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://ocw.mit.edu/",
+      "name": "MIT OpenCourseWare",
+      "shortName": "mit_opencourseware",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://www.skillshare.com/",
+      "name": "Skillshare",
+      "shortName": "skillshare",
+      "faviconExtension": "webp"
+    },
+    {
+      "url": "https://www.codecademy.com/",
+      "name": "Codecademy",
+      "shortName": "codecademy",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://www.futurelearn.com/",
+      "name": "FutureLearn",
+      "shortName": "futurelearn",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://www.pluralsight.com/",
+      "name": "Pluralsight",
+      "shortName": "pluralsight",
+      "faviconExtension": "png"
+    },
+    {
+      "url": "https://www.teachable.com/",
+      "name": "Teachable",
+      "shortName": "teachable",
+      "faviconExtension": "png"
+    }
+  ]
+}

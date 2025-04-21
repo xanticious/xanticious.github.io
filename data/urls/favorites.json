@@ -1,0 +1,41 @@
+{
+  "category": "favorites",
+  "urls": [
+    {
+      "url": "https://outlook.office.com/mail/",
+      "name": "Work Email",
+      "shortName": "work_email",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://outlook.office.com/calendar/view/week",
+      "name": "Work Calendar",
+      "shortName": "work_calendar",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://jira.sirsidynix.com/secure/RapidBoard.jspa?rapidView=367",
+      "name": "Jira",
+      "shortName": "jira",
+      "faviconExtension": "png"
+    },
+    {
+      "url": "https://bitbucket.sirsi.pvt/projects/BCUI/repos/bcd-ui/browse",
+      "name": "BitBucket (Patron)",
+      "shortName": "bitbucket_patron",
+      "faviconExtension": "png"
+    },
+    {
+      "url": "https://bitbucket.sirsi.pvt/projects/BCUI/repos/bcd-ui/browse",
+      "name": "BitBucket (BCD-UI)",
+      "shortName": "bitbucket_ui",
+      "faviconExtension": "png"
+    },
+    {
+      "url": "https://collab.sirsi.pvt/pages/viewpage.action?pageId=138143633",
+      "name": "Confluence",
+      "shortName": "confluence",
+      "faviconExtension": "png"
+    }
+  ]
+}

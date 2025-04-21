@@ -1,0 +1,35 @@
+{
+  "category": "tools",
+  "urls": [
+    {
+      "url": "https://google.com/",
+      "name": "Google Search",
+      "shortName": "google_search",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://chatgpt.com/",
+      "name": "ChatGPT",
+      "shortName": "chatgpt",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://stackoverflow.com/",
+      "name": "Stack Overflow",
+      "shortName": "stack_overflow",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://excalidraw.com/",
+      "name": "Excalidraw",
+      "shortName": "excalidraw",
+      "faviconExtension": "png"
+    },
+    {
+      "url": "https://wiredjs.com/",
+      "name": "WiredElements",
+      "shortName": "wiredelements",
+      "faviconExtension": "png"
+    }
+  ]
+}

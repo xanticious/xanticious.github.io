@@ -40,26 +40,25 @@
 
       async function loadData() {
         try {
-          // Load JSON data
-          const [categories, urls] = await Promise.all([
-            fetch("data/categories.json").then((res) => res.json()),
-            fetch("data/urls.json").then((res) => res.json()),
-          ]);
+          // Load categories
+          const categories = await fetch("data/categories.json").then((res) =>
+            res.json()
+          );
 
           // Create a lookup for category names by ID
           const categoryMap = {};
           categories.forEach((cat) => (categoryMap[cat.id] = cat.name));
 
-          // Group URLs by category
+          // Load URLs for each category
           const categorizedLinks = {};
-          urls.forEach((url) => {
-            url.categories.forEach((catId) => {
-              if (!categorizedLinks[catId]) {
-                categorizedLinks[catId] = [];
-              }
-              categorizedLinks[catId].push(url);
-            });
-          });
+          await Promise.all(
+            categories.map(async (cat) => {
+              const urls = await fetch(`data/urls/${cat.id}.json`).then((res) =>
+                res.json()
+              );
+              categorizedLinks[cat.id] = urls;
+            })
+          );
 
           // Build the DOM
           const container = document.getElementById("container");
@@ -75,20 +74,22 @@
             const ul = document.createElement("ul");
             ul.classList.add("links");
 
-            links.forEach(({ url, name, shortName, faviconExtension }) => {
-              const li = document.createElement("li");
-              const a = document.createElement("a");
-              a.href = url;
-              a.textContent = ` ${name}`;
+            links.urls
+              .sort((a, b) => a.name.localeCompare(b.name))
+              .forEach(({ url, name, shortName, faviconExtension }) => {
+                const li = document.createElement("li");
+                const a = document.createElement("a");
+                a.href = url;
+                a.textContent = ` ${name}`;
 
-              const img = document.createElement("img");
-              img.src = `images/${shortName}.${faviconExtension}`;
-              img.alt = name;
+                const img = document.createElement("img");
+                img.src = `images/${shortName}.${faviconExtension}`;
+                img.alt = name;
 
-              a.prepend(img);
-              li.appendChild(a);
-              ul.appendChild(li);
-            });
+                a.prepend(img);
+                li.appendChild(a);
+                ul.appendChild(li);
+              });
 
             categoryDiv.appendChild(ul);
             container.appendChild(categoryDiv);

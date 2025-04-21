@@ -1,0 +1,65 @@
+{
+  "category": "news",
+  "urls": [
+    {
+      "url": "https://www.npr.org/",
+      "name": "NPR",
+      "shortName": "npr",
+      "faviconExtension": "png"
+    },
+    {
+      "url": "https://www.bbc.com/",
+      "name": "BBC",
+      "shortName": "bbc",
+      "faviconExtension": "png"
+    },
+    {
+      "url": "https://www.nytimes.com/",
+      "name": "The New York Times",
+      "shortName": "the_new_york_times",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://www.reuters.com/",
+      "name": "Reuters",
+      "shortName": "reuters",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://www.theguardian.com/",
+      "name": "The Guardian",
+      "shortName": "the_guardian",
+      "faviconExtension": "svg"
+    },
+    {
+      "url": "https://www.cnn.com/",
+      "name": "CNN",
+      "shortName": "cnn",
+      "faviconExtension": "png"
+    },
+    {
+      "url": "https://www.aljazeera.com/",
+      "name": "Al Jazeera",
+      "shortName": "al_jazeera",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://www.wsj.com/",
+      "name": "The Wall Street Journal",
+      "shortName": "the_wall_street_journal",
+      "faviconExtension": "svg"
+    },
+    {
+      "url": "https://www.bloomberg.com/",
+      "name": "Bloomberg",
+      "shortName": "bloomberg",
+      "faviconExtension": "png"
+    },
+    {
+      "url": "https://www.washingtonpost.com/",
+      "name": "The Washington Post",
+      "shortName": "the_washington_post",
+      "faviconExtension": "svg"
+    }
+  ]
+}

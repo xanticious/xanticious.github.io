@@ -1,0 +1,65 @@
+{
+  "category": "social_media",
+  "urls": [
+    {
+      "url": "https://www.facebook.com/",
+      "name": "Facebook",
+      "shortName": "facebook",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://twitter.com/",
+      "name": "Twitter",
+      "shortName": "twitter",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://www.instagram.com/",
+      "name": "Instagram",
+      "shortName": "instagram",
+      "faviconExtension": "png"
+    },
+    {
+      "url": "https://www.linkedin.com/",
+      "name": "LinkedIn",
+      "shortName": "linkedin",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://www.snapchat.com/",
+      "name": "Snapchat",
+      "shortName": "snapchat",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://www.pinterest.com/",
+      "name": "Pinterest",
+      "shortName": "pinterest",
+      "faviconExtension": "png"
+    },
+    {
+      "url": "https://www.reddit.com/",
+      "name": "Reddit",
+      "shortName": "reddit",
+      "faviconExtension": "png"
+    },
+    {
+      "url": "https://www.tumblr.com/",
+      "name": "Tumblr",
+      "shortName": "tumblr",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://www.tiktok.com/",
+      "name": "TikTok",
+      "shortName": "tiktok",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://www.whatsapp.com/",
+      "name": "WhatsApp",
+      "shortName": "whatsapp",
+      "faviconExtension": "png"
+    }
+  ]
+}
