@@ -15,7 +15,7 @@
   </head>
   <body>
     <button class="settings-button" onclick="navigateToSettings()"></button>
-    <div id="container" class="container" />
+    <div id="container" class="container"></div>
 
     <script>
       function navigateToSettings() {
@@ -83,7 +83,11 @@
                 const li = document.createElement("li");
                 const a = document.createElement("a");
                 a.href = url;
-                a.textContent = ` ${name}`;
+
+                const span = document.createElement("span");
+                span.classList.add("link-text");
+                span.textContent = `${name}`;
+                a.appendChild(span);
 
                 const img = document.createElement("img");
                 img.src = `images/${shortName}.${faviconExtension}`;
