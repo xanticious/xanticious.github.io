@@ -63,12 +63,15 @@
           // Build the DOM
           const container = document.getElementById("container");
 
-          Object.entries(categorizedLinks).forEach(([catId, links]) => {
+          categories.forEach((cat) => {
+            const links = categorizedLinks[cat.id];
+            if (!links) return;
+
             const categoryDiv = document.createElement("div");
             categoryDiv.classList.add("category");
 
             const heading = document.createElement("h2");
-            heading.textContent = categoryMap[catId] || catId;
+            heading.textContent = categoryMap[cat.id] || cat.id;
             categoryDiv.appendChild(heading);
 
             const ul = document.createElement("ul");
