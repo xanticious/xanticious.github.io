@@ -5,6 +5,7 @@
     { "value": "Card-Game-Halloween", "label": "Card Game (Halloween)" },
     { "value": "Card-Game-Poker", "label": "Card Game (Poker)" },
     { "value": "Checkers", "label": "Checkers" },
+    { "value": "Circles", "label": "Circles" },
     { "value": "Classic", "label": "Classic" },
     { "value": "Dark", "label": "Dark" },
     { "value": "Light", "label": "Light" },
