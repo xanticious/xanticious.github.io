@@ -1,0 +1,18 @@
+{
+  "styles": [
+    { "value": "Card-Game", "label": "Card Game" },
+    { "value": "Card-Game-Dark", "label": "Card Game (Dark)" },
+    { "value": "Card-Game-Halloween", "label": "Card Game (Halloween)" },
+    { "value": "Card-Game-Poker", "label": "Card Game (Poker)" },
+    { "value": "Checkers", "label": "Checkers" },
+    { "value": "Classic", "label": "Classic" },
+    { "value": "Dark", "label": "Dark" },
+    { "value": "Light", "label": "Light" },
+    { "value": "Minimal", "label": "Minimal" },
+    { "value": "Minimal-Dark", "label": "Minimal (Dark)" },
+    { "value": "Modern", "label": "Modern" },
+    { "value": "Pirate", "label": "Pirate" },
+    { "value": "Random", "label": "Random" },
+    { "value": "Speed-Dial", "label": "Speed Dial" }
+  ]
+}

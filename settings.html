@@ -72,25 +72,44 @@
       </div>
       <label for="style">Style:</label>
       <div class="select-container">
-        <select id="style">
-          <option value="Card-Game">Card Game</option>
-          <option value="Card-Game-Dark">Card Game (Dark)</option>
-          <option value="Card-Game-Halloween">Card Game (Halloween)</option>
-          <option value="Card-Game-Poker">Card Game (Poker)</option>
-          <option value="Classic">Classic</option>
-          <option value="Dark">Dark</option>
-          <option value="Light">Light</option>
-          <option value="Minimal">Minimal</option>
-          <option value="Minimal-Dark">Minimal (Dark)</option>
-          <option value="Modern">Modern</option>
-          <option value="Pirate">Pirate</option>
-          <option value="Speed-Dial">Speed Dial</option>
-          <option value="Checkers">Checkers</option>
-        </select>
+        <select id="style"></select>
       </div>
       <button onclick="saveSettings()">Save</button>
     </div>
     <script>
+      async function loadStyles() {
+        const response = await fetch("data/styles.json");
+        const data = await response.json();
+        const styleSelect = document.getElementById("style");
+
+        data.styles
+          .sort((a, b) => a.label.localeCompare(b.label)) // Sort styles alphabetically
+          .forEach((style) => {
+            const option = document.createElement("option");
+            option.value = style.value;
+            option.textContent = style.label;
+            styleSelect.appendChild(option);
+          });
+      }
+
+      async function loadSettings() {
+        await loadStyles();
+        const savedSettings = JSON.parse(localStorage.getItem("userSettings"));
+        if (savedSettings) {
+          document.getElementById("type").value = savedSettings.type;
+          document.getElementById("style").value = savedSettings.style;
+        }
+
+        // Sort "Type" options alphabetically
+        const typeSelect = document.getElementById("type");
+        const options = Array.from(typeSelect.options);
+        options
+          .sort((a, b) => a.text.localeCompare(b.text))
+          .forEach((option) => typeSelect.appendChild(option));
+      }
+
+      loadSettings();
+
       function saveSettings() {
         const type = document.getElementById("type").value;
         const style = document.getElementById("style").value;
@@ -99,16 +118,6 @@
         localStorage.setItem("userSettings", JSON.stringify(settings));
         window.location.href = "index.html";
       }
-
-      function loadSettings() {
-        const savedSettings = JSON.parse(localStorage.getItem("userSettings"));
-        if (savedSettings) {
-          document.getElementById("type").value = savedSettings.type;
-          document.getElementById("style").value = savedSettings.style;
-        }
-      }
-
-      loadSettings();
     </script>
   </body>
 </html>

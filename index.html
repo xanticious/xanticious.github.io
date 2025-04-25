@@ -22,12 +22,23 @@
         window.location.href = "settings.html";
       }
 
-      function loadSettings() {
+      async function loadSettings() {
         const defaultSettings = { type: "Home", style: "Modern" };
         const savedSettings =
           JSON.parse(localStorage.getItem("userSettings")) || defaultSettings;
 
-        const { type, style } = savedSettings;
+        let { type, style } = savedSettings;
+
+        if (style === "Random") {
+          const response = await fetch("data/styles.json");
+          const data = await response.json();
+          const nonRandomStyles = data.styles.filter(
+            (s) => s.value !== "Random"
+          );
+          const randomStyle =
+            nonRandomStyles[Math.floor(Math.random() * nonRandomStyles.length)];
+          style = randomStyle.value;
+        }
 
         // Dynamically load the CSS file based on the style
         const link = document.createElement("link");
