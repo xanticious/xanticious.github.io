@@ -32,7 +32,7 @@
         // Dynamically load the CSS file based on the style
         const link = document.createElement("link");
         link.rel = "stylesheet";
-        link.href = `/styles/${style.toLowerCase().replace("-", "_")}.css`;
+        link.href = `/styles/${style.toLowerCase().replaceAll("-", "_")}.css`;
         document.head.appendChild(link);
       }
 

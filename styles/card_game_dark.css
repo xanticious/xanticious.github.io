@@ -1,0 +1,10 @@
+@import "./card_game.css";
+
+:root {
+  --playing-field: #1e1e1e;
+  --categories-outline: #d4af37;
+  --cardback-start: #3e3e3e;
+  --cardback-end: #1e1e1e;
+  --text-color: #f8f8f8;
+  --category-text-color: #d4af37;
+}
