@@ -14,6 +14,7 @@
     { "value": "Modern", "label": "Modern" },
     { "value": "Pirate", "label": "Pirate" },
     { "value": "Random", "label": "Random" },
-    { "value": "Speed-Dial", "label": "Speed Dial" }
+    { "value": "Speed-Dial", "label": "Speed Dial" },
+    { "value": "Video-Game", "label": "Video Game" }
   ]
 }

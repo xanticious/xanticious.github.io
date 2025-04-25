@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("../images/grass_tile.png");
+  background-size: 64px 64px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.category {
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  margin: 40px auto;
+  border: 2px solid #ccc;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: "Press Start 2P", cursive;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 20px;
+}
+
+.links li {
+  list-style: none;
+  width: 100px;
+  height: 120px;
+  background: #885019;
+  border: 2px solid #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.links li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  width: 100px;
+  height: 120px;
+  background: none;
+  justify-content: center;
+  position: relative;
+}
+
+.links li:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.links li a img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+.links li a span {
+  display: block;
+  padding: 2px;
+  margin: 2px;
+  background: #fff;
+  color: #000;
+  font-size: 0.7rem;
+  text-align: center;
+  line-height: 20px;
+  border: 1px solid #000;
+  border-radius: 2px;
+  margin-bottom: 5px;
+  font-family: "Press Start 2P", cursive;
+  word-wrap: anywhere;
+  font-size: 10px;
+}
