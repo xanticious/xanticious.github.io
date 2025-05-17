@@ -12,6 +12,7 @@
     { "value": "Minimal", "label": "Minimal" },
     { "value": "Minimal-Dark", "label": "Minimal (Dark)" },
     { "value": "Modern", "label": "Modern" },
+    { "value": "Pinterest", "label": "Pintrest (Masonry)" },
     { "value": "Pirate", "label": "Pirate" },
     { "value": "Random", "label": "Random" },
     { "value": "Speed-Dial", "label": "Speed Dial" },
