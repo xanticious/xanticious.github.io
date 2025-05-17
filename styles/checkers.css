@@ -198,6 +198,10 @@ h2 {
   height: 40px;
   margin: 0 auto 8px auto;
   margin-bottom: 5px;
+  background-color: white;
+  border: 2px solid white;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
 }
 .links li a:hover {
   text-decoration: underline;

@@ -83,4 +83,8 @@ h2 {
   height: 80px;
   margin: 0 auto 8px auto;
   display: block;
+  background-color: white;
+  border-radius: 10%;
+  border: 3px solid var(--categories-outline);
+  padding: 4px;
 }

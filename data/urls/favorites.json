@@ -17,24 +17,28 @@
       "url": "https://jira.sirsidynix.com/secure/RapidBoard.jspa?rapidView=367",
       "name": "Jira",
       "shortName": "jira",
+      "faviconName": "sd_favicon",
       "faviconExtension": "png"
     },
     {
       "url": "https://bitbucket.sirsi.pvt/projects/BCUI/repos/bcd-ui/browse",
       "name": "BitBucket (Patron)",
       "shortName": "bitbucket_patron",
+      "faviconName": "sd_favicon",
       "faviconExtension": "png"
     },
     {
       "url": "https://bitbucket.sirsi.pvt/projects/BCUI/repos/bcd-ui/browse",
       "name": "BitBucket (BCD-UI)",
       "shortName": "bitbucket_ui",
+      "faviconName": "sd_favicon",
       "faviconExtension": "png"
     },
     {
       "url": "https://collab.sirsi.pvt/pages/viewpage.action?pageId=138143633",
       "name": "Confluence",
       "shortName": "confluence",
+      "faviconName": "sd_favicon",
       "faviconExtension": "png"
     }
   ]

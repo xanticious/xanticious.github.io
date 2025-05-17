@@ -17,24 +17,28 @@
       "url": "https://jira.sirsidynix.com/secure/RapidBoard.jspa?rapidView=367",
       "name": "Jira",
       "shortName": "jira",
+      "faviconName": "sd_favicon",
       "faviconExtension": "png"
     },
     {
       "url": "https://bitbucket.sirsi.pvt/projects/BCUI/repos/bcd-ui/browse",
       "name": "BitBucket (Patron)",
       "shortName": "bitbucket_patron",
+      "faviconName": "sd_favicon",
       "faviconExtension": "png"
     },
     {
       "url": "https://bitbucket.sirsi.pvt/projects/BCUI/repos/bcd-ui/browse",
       "name": "BitBucket (BCD-UI)",
       "shortName": "bitbucket_ui",
+      "faviconName": "sd_favicon",
       "faviconExtension": "png"
     },
     {
       "url": "https://collab.sirsi.pvt/pages/viewpage.action?pageId=138143633",
       "name": "Confluence",
       "shortName": "confluence",
+      "faviconName": "sd_favicon",
       "faviconExtension": "png"
     },
     {
@@ -65,7 +69,8 @@
       "url": "http://intranet/",
       "name": "Intranet",
       "shortName": "intranet",
-      "faviconExtension": "ico"
+      "faviconName": "sd_favicon",
+      "faviconExtension": "png"
     },
     {
       "url": "https://harriscomputer.my.idaptive.app/",
@@ -95,6 +100,7 @@
       "url": "https://jira.sirsidynix.com/secure/TimesheetReport.jspa?reportKey=jira-timesheet-plugin%3Areport&selectedProjectId=11752&reportingDay=1&startDate=2023-01-01&endDate=2023-02-09&targetUser=anthony.litchfield&projectRoleId=&filterid=&priority=&commentfirstword=&weekends=true&showDetails=true&sum=day&groupByField=&sortBy=&sortDir=ASC&Next=Next",
       "name": "Time Log Report",
       "shortName": "time_log_report",
+      "faviconName": "sd_favicon",
       "faviconExtension": "png"
     },
     {
@@ -125,6 +131,7 @@
       "url": "https://collab.sirsi.pvt/pages/viewpage.action?pageId=41913309",
       "name": "Jira Templates",
       "shortName": "jira_templates",
+      "faviconName": "sd_favicon",
       "faviconExtension": "png"
     },
     {

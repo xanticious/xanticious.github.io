@@ -5,121 +5,141 @@
       "url": "https://bogus.sirsidynix.com/admin/",
       "name": "Bogus",
       "shortName": "bogus",
-      "faviconExtension": "png"
+      "faviconExtension": "png",
+      "faviconName": "sd_favicon"
     },
     {
       "url": "https://blackops.dev.sirsidynix.net/bcd-ui",
       "name": "BlackOps (BCD)",
       "shortName": "blackops",
-      "faviconExtension": "png"
+      "faviconExtension": "png",
+      "faviconName": "sd_favicon"
     },
     {
       "url": "https://blackops.dev.sirsidynix.net/admin",
       "name": "BlackOps (Admin)",
       "shortName": "blackops_admin",
-      "faviconExtension": "png"
+      "faviconExtension": "png",
+      "faviconName": "sd_favicon"
     },
     {
       "url": "https://na3.bc.sirsidynix.net/bcd-ui",
       "name": "NA3 (BCD)",
       "shortName": "na3_bcd",
-      "faviconExtension": "png"
+      "faviconExtension": "png",
+      "faviconName": "sd_favicon"
     },
     {
       "url": "https://tsb.dev.sirsidynix.net/admin",
       "name": "TSB (Lists)",
       "shortName": "tsb",
-      "faviconExtension": "png"
+      "faviconExtension": "png",
+      "faviconName": "sd_favicon"
     },
     {
       "url": "https://torchwood.dev.sirsidynix.net/admin",
       "name": "Torchwood",
       "shortName": "torchwood",
-      "faviconExtension": "png"
+      "faviconExtension": "png",
+      "faviconName": "sd_favicon"
     },
     {
       "url": "https://preprod.bc.sirsidynix.net/admin",
       "name": "Pre-Prod",
       "shortName": "pre-prod",
-      "faviconExtension": "png"
+      "faviconExtension": "png",
+      "faviconName": "sd_favicon"
     },
     {
       "url": "https://patch-prod.dev.sirsidynix.net/admin",
       "name": "Patch-Prod",
       "shortName": "patch-prod",
-      "faviconExtension": "png"
+      "faviconExtension": "png",
+      "faviconName": "sd_favicon"
     },
     {
       "url": "https://apac1.bc.sirsidynix.net.au/admin",
       "name": "APAC",
       "shortName": "apac",
-      "faviconExtension": "png"
+      "faviconExtension": "png",
+      "faviconName": "sd_favicon"
     },
     {
       "url": "https://can1.bc.sirsidynix.net/admin",
       "name": "CAN1",
       "shortName": "can1",
-      "faviconExtension": "png"
+      "faviconExtension": "png",
+      "faviconName": "sd_favicon"
     },
     {
       "url": "https://emea1.bc.sirsidynix.net.uk/admin",
       "name": "EMEA1",
       "shortName": "emea1",
-      "faviconExtension": "png"
+      "faviconExtension": "png",
+      "faviconName": "sd_favicon"
     },
     {
       "url": "https://na1.bc.sirsidynix.net/admin",
       "name": "NA1",
       "shortName": "na1",
-      "faviconExtension": "png"
+      "faviconExtension": "png",
+      "faviconName": "sd_favicon"
     },
     {
       "url": "https://na2.bc.sirsidynix.net/admin",
       "name": "NA2",
       "shortName": "na2",
-      "faviconExtension": "png"
+      "faviconExtension": "png",
+      "faviconName": "sd_favicon"
     },
     {
       "url": "https://na3.bc.sirsidynix.net/admin",
       "name": "NA3",
       "shortName": "na3",
-      "faviconExtension": "png"
+      "faviconExtension": "png",
+      "faviconName": "sd_favicon"
     },
     {
       "url": "https://sg1.bc.sirsidynix.sg/admin",
       "name": "SG1",
       "shortName": "sg1",
-      "faviconExtension": "png"
+      "faviconExtension": "png",
+      "faviconName": "sd_favicon"
     },
     {
       "url": "https://beta.sales.sirsidynix.net/admin",
       "name": "Beta Sales",
       "shortName": "beta_sales",
-      "faviconExtension": "png"
+      "faviconExtension": "png",
+      "faviconName": "sd_favicon"
     },
     {
       "url": "https://prod.sales.sirsidynix.net/admin",
       "name": "Prod Sales",
       "shortName": "prod_sales",
-      "faviconExtension": "png"
+      "faviconExtension": "png",
+      "faviconName": "sd_favicon"
     },
     {
       "url": "https://apactest.bc.sirsidynix.net.au/admin",
       "name": "APAC Test",
       "shortName": "apac_test",
-      "faviconExtension": "png"
+      "faviconExtension": "png",
+      "faviconName": "sd_favicon"
     },
     {
       "url": "https://emeatest.bc.sirsidynix.net.uk/admin",
       "name": "EMEA Test",
       "shortName": "emea_test",
-      "faviconExtension": "png"
+      "faviconExtension": "png",
+      "faviconName": "sd_favicon"
     },
     {
       "url": "https://noamtest.bc.sirsidynix.net/admin",
       "name": "NOAM Test",
       "shortName": "noam_test",
-      "faviconExtension": "png"
+      "faviconExtension": "png",
+      "faviconName": "sd_favicon"
     }
   ]
 }

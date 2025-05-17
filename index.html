@@ -90,24 +90,28 @@
 
             links.urls
               .sort((a, b) => a.name.localeCompare(b.name))
-              .forEach(({ url, name, shortName, faviconExtension }) => {
-                const li = document.createElement("li");
-                const a = document.createElement("a");
-                a.href = url;
+              .forEach(
+                ({ url, name, shortName, faviconName, faviconExtension }) => {
+                  const li = document.createElement("li");
+                  const a = document.createElement("a");
+                  a.href = url;
 
-                const span = document.createElement("span");
-                span.classList.add("link-text");
-                span.textContent = `${name}`;
-                a.appendChild(span);
+                  const span = document.createElement("span");
+                  span.classList.add("link-text");
+                  span.textContent = `${name}`;
+                  a.appendChild(span);
 
-                const img = document.createElement("img");
-                img.src = `images/${shortName}.${faviconExtension}`;
-                img.alt = name;
+                  const img = document.createElement("img");
+                  img.src = `images/${
+                    faviconName || shortName
+                  }.${faviconExtension}`;
+                  img.alt = name;
 
-                a.prepend(img);
-                li.appendChild(a);
-                ul.appendChild(li);
-              });
+                  a.prepend(img);
+                  li.appendChild(a);
+                  ul.appendChild(li);
+                }
+              );
 
             categoryDiv.appendChild(ul);
             container.appendChild(categoryDiv);
