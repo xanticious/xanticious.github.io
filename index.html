@@ -32,9 +32,9 @@
         if (style === "Random") {
           const response = await fetch("data/styles.json");
           const data = await response.json();
-          const nonRandomStyles = data.styles.filter(
-            (s) => s.value !== "Random"
-          );
+          const nonRandomStyles = Object.values(data.styles)
+            .flat()
+            .filter((s) => s.value !== "Random" && s.implemented);
           const randomStyle =
             nonRandomStyles[Math.floor(Math.random() * nonRandomStyles.length)];
           style = randomStyle.value;
