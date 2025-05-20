@@ -1,21 +1,106 @@
 {
-  "styles": [
-    { "value": "Card-Game", "label": "Card Game" },
-    { "value": "Card-Game-Dark", "label": "Card Game (Dark)" },
-    { "value": "Card-Game-Halloween", "label": "Card Game (Halloween)" },
-    { "value": "Card-Game-Poker", "label": "Card Game (Poker)" },
-    { "value": "Checkers", "label": "Checkers" },
-    { "value": "Circles", "label": "Circles" },
-    { "value": "Classic", "label": "Classic" },
-    { "value": "Dark", "label": "Dark" },
-    { "value": "Light", "label": "Light" },
-    { "value": "Minimal", "label": "Minimal" },
-    { "value": "Minimal-Dark", "label": "Minimal (Dark)" },
-    { "value": "Modern", "label": "Modern" },
-    { "value": "Pinterest", "label": "Pintrest (Masonry)" },
-    { "value": "Pirate", "label": "Pirate" },
-    { "value": "Random", "label": "Random" },
-    { "value": "Speed-Dial", "label": "Speed Dial" },
-    { "value": "Video-Game", "label": "Video Game" }
-  ]
+  "styles": {
+    "UI Patterns": [
+      { "value": "Classic", "label": "Classic", "implemented": true },
+      { "value": "Dark", "label": "Dark", "implemented": true },
+      { "value": "Light", "label": "Light", "implemented": true },
+      { "value": "Minimal", "label": "Minimal", "implemented": true },
+      {
+        "value": "Minimal-Dark",
+        "label": "Minimal (Dark)",
+        "implemented": true
+      },
+      { "value": "Modern", "label": "Modern", "implemented": true },
+      {
+        "value": "Pinterest",
+        "label": "Pintrest (Masonry)",
+        "implemented": true
+      },
+      { "value": "Circles", "label": "Bubbles / Circles", "implemented": true },
+      { "value": "Speed-Dial", "label": "Speed Dial", "implemented": true }
+    ],
+    "Games": [
+      { "value": "Card-Game", "label": "Card Game", "implemented": true },
+      {
+        "value": "Card-Game-Dark",
+        "label": "Card Game (Dark)",
+        "implemented": true
+      },
+      {
+        "value": "Card-Game-Halloween",
+        "label": "Card Game (Halloween)",
+        "implemented": true
+      },
+      {
+        "value": "Card-Game-Poker",
+        "label": "Card Game (Poker)",
+        "implemented": true
+      },
+      { "value": "Checkers", "label": "Checkers", "implemented": true },
+      { "value": "Video-Game", "label": "Video Game", "implemented": true }
+    ],
+    "Other": [{ "value": "Random", "label": "Random", "implemented": true }],
+    "Seasons": [
+      { "value": "Spring", "label": "Spring", "implemented": true },
+      { "value": "Summer", "label": "Summer", "implemented": true },
+      { "value": "Fall", "label": "Autumn / Fall", "implemented": true },
+      { "value": "Winter", "label": "Winter", "implemented": true }
+    ],
+    "Time Periods": [
+      { "value": "Pyramids", "label": "Pyramids", "implemented": false },
+      { "value": "Dark-Ages", "label": "Dark Ages", "implemented": false },
+      { "value": "Renaissance", "label": "Renaissance", "implemented": false },
+      { "value": "Pirate", "label": "Pirate", "implemented": true },
+      { "value": "Victorian", "label": "Victorian", "implemented": false },
+      { "value": "Cowboy", "label": "Cowboy", "implemented": false },
+      { "value": "Seventies", "label": "70's", "implemented": false },
+      { "value": "Eighties", "label": "80's", "implemented": false },
+      { "value": "Nineties", "label": "90's", "implemented": false },
+      { "value": "Two-Thousands", "label": "2000's", "implemented": false },
+      { "value": "Twenty-Tens", "label": "2010's", "implemented": false },
+      { "value": "Twenty-Twenties", "label": "2020's", "implemented": false },
+      { "value": "Future", "label": "Future", "implemented": false },
+      { "value": "Medieval", "label": "Medieval", "implemented": false },
+      {
+        "value": "Ancient-Greece",
+        "label": "Ancient Greece",
+        "implemented": false
+      },
+      { "value": "Industrial", "label": "Industrial", "implemented": false }
+    ],
+    "Art Styles": [
+      { "value": "Monochrome", "label": "Monochrome", "implemented": false },
+      { "value": "Pastel", "label": "Pastel", "implemented": false },
+      { "value": "Line-Art", "label": "Line Art", "implemented": false },
+      { "value": "Neon", "label": "Neon", "implemented": false },
+      { "value": "Cubism", "label": "Cubism", "implemented": false },
+      { "value": "Surrealism", "label": "Surrealism", "implemented": false },
+      { "value": "Vaporwave", "label": "Vaporwave", "implemented": false },
+      { "value": "Pixel-Art", "label": "Pixel Art", "implemented": false },
+      { "value": "Watercolor", "label": "Watercolor", "implemented": false }
+    ],
+    "Environments": [
+      { "value": "Jungle", "label": "Jungle", "implemented": false },
+      { "value": "Ocean", "label": "Ocean", "implemented": false },
+      { "value": "Space", "label": "Space", "implemented": false },
+      { "value": "Mountain", "label": "Mountain", "implemented": false },
+      { "value": "Lake", "label": "Lake", "implemented": false },
+      { "value": "Canyon", "label": "Canyon", "implemented": false },
+      { "value": "Desert", "label": "Desert", "implemented": false },
+      { "value": "Forest", "label": "Forest", "implemented": false },
+      { "value": "City", "label": "City", "implemented": false },
+      { "value": "Volcano", "label": "Volcano", "implemented": false }
+    ],
+    "Genres": [
+      { "value": "Sci-Fi", "label": "Sci Fi", "implemented": false },
+      { "value": "Cyberpunk", "label": "Cyberpunk", "implemented": false },
+      { "value": "Steampunk", "label": "Steampunk", "implemented": false },
+      { "value": "Superhero", "label": "Superhero", "implemented": false },
+      { "value": "Mystery", "label": "Mystery", "implemented": false },
+      { "value": "Fantasy", "label": "Fantasy", "implemented": false },
+      { "value": "Horror", "label": "Horror", "implemented": false },
+      { "value": "Romance", "label": "Romance", "implemented": false },
+      { "value": "Adventure", "label": "Adventure", "implemented": false }
+    ]
+  }
 }

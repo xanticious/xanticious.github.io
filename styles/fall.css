@@ -1,0 +1,29 @@
+@import "./seasons.css";
+
+:root {
+  --body-background-gradient: linear-gradient(135deg, #fff7e6 0%, #ffd6a0 100%);
+  --body-color: #7a3b00;
+  --category-bg: rgba(255, 245, 220, 0.85);
+  --category-border: 1.5px solid rgba(255, 200, 120, 0.22);
+  --category-shadow: 0 6px 32px 0 rgba(255, 180, 80, 0.13);
+  --category-hover-shadow: 0 12px 36px 0 rgba(255, 180, 80, 0.22);
+  --category-title-color: #d2691e;
+  --category-title-shadow: 0 2px 8px #fff7e6, 0 1px 0 #fff;
+  --link-color: #7a3b00;
+  --link-hover-color: #a0521d;
+  --link-bg: rgba(255, 255, 255, 0.18);
+  --link-hover-bg: linear-gradient(90deg, #fff7e6 60%, #ffd6a0 100%);
+  --link-shadow: 0 1px 4px 0 rgba(255, 200, 120, 0.08);
+  --link-hover-shadow: 0 2px 12px 0 rgba(255, 180, 80, 0.14);
+  --link-img-border: 1px solid rgba(255, 200, 120, 0.18);
+  --link-img-shadow: 0 2px 8px 0 rgba(255, 180, 80, 0.1);
+  --settings-button-bg: rgba(255, 255, 255, 0.8);
+  --settings-button-hover-bg: #ffd6a0;
+  --settings-button-shadow: 0 2px 12px 0 rgba(255, 180, 80, 0.13);
+  --settings-button-hover-shadow: 0 4px 18px 0 rgba(255, 180, 80, 0.22);
+  --settings-button-color: #d2691e;
+  --settings-button-content: "🍂";
+  --scrollbar-bg: #fff7e6;
+  --scrollbar-thumb-bg: #ffd6a0;
+  --scrollbar-thumb-border: 2px solid #fff7e6;
+}

@@ -82,7 +82,12 @@
         const data = await response.json();
         const styleSelect = document.getElementById("style");
 
-        data.styles
+        // Flatten all styles from all categories and filter for implemented
+        const allStyles = Object.values(data.styles)
+          .flat()
+          .filter((style) => style.implemented);
+
+        allStyles
           .sort((a, b) => a.label.localeCompare(b.label)) // Sort styles alphabetically
           .forEach((style) => {
             const option = document.createElement("option");
