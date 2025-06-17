@@ -48,35 +48,55 @@
       }
 
       loadSettings();
-
       async function loadData() {
         try {
+          // Get user settings to determine if we should show work-only categories
+          const savedSettings = JSON.parse(
+            localStorage.getItem("userSettings")
+          ) || { type: "Home", style: "Modern" };
+          const isWorkMode = savedSettings.type === "Work";
+
           // Load categories
           const categories = await fetch("data/categories.json").then((res) =>
             res.json()
-          );
+          ); // Filter categories based on work/home setting
+          const filteredCategories = categories.filter((cat) => {
+            if (cat.isWorkOnly && !isWorkMode) {
+              return false; // Don't show work-only categories in Home mode
+            }
+            if (cat.id === "home_favorites" && isWorkMode) {
+              return false; // Don't show home_favorites category in Work mode
+            }
+            return true;
+          });
 
           // Create a lookup for category names by ID
           const categoryMap = {};
-          categories.forEach((cat) => (categoryMap[cat.id] = cat.name));
+          filteredCategories.forEach((cat) => (categoryMap[cat.id] = cat.name));
 
           // Load URLs for each category
           const categorizedLinks = {};
           await Promise.all(
-            categories.map(async (cat) => {
-              const urls = await fetch(`data/urls/${cat.id}.json`).then((res) =>
-                res.json()
-              );
-              categorizedLinks[cat.id] = urls;
+            filteredCategories.map(async (cat) => {
+              try {
+                const urls = await fetch(`data/urls/${cat.id}.json`).then(
+                  (res) => res.json()
+                );
+                categorizedLinks[cat.id] = urls;
+              } catch (error) {
+                // If the file doesn't exist, skip this category
+                console.warn(`No URL file found for category: ${cat.id}`);
+              }
             })
           );
 
           // Build the DOM
           const container = document.getElementById("container");
 
-          categories.forEach((cat) => {
+          filteredCategories.forEach((cat) => {
             const links = categorizedLinks[cat.id];
-            if (!links) return;
+            // Only render categories that have URLs
+            if (!links || !links.urls || links.urls.length === 0) return;
 
             const categoryDiv = document.createElement("div");
             categoryDiv.classList.add("category");
