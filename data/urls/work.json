@@ -145,6 +145,13 @@
       "name": "Nexus",
       "shortName": "nexus",
       "faviconExtension": "png"
+    },
+    {
+      "url": "https://js-loginsight.sirsi.pvt/",
+      "name": "Log Insight",
+      "shortName": "log_insight",
+      "faviconName": "vmware",
+      "faviconExtension": "ico"
     }
   ]
 }
