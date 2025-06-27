@@ -8,6 +8,12 @@
       "faviconExtension": "ico"
     },
     {
+      "url": "https://github.com/copilot",
+      "name": "GitHub Copilot",
+      "shortName": "github_copilot",
+      "faviconExtension": "png"
+    },
+    {
       "url": "https://chatgpt.com/",
       "name": "ChatGPT",
       "shortName": "chatgpt",
