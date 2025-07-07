@@ -2,6 +2,7 @@
 
 body {
   margin: 0;
+  margin-top: 20px;
   padding: 0;
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
@@ -97,4 +98,17 @@ h2 {
   font-family: "Press Start 2P", cursive;
   word-wrap: anywhere;
   font-size: 10px;
+}
+
+#clearFiltersBtn {
+  background-color: #bf7b4a;
+}
+
+#noResultsMessage {
+  background-color: #bbb;
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 2px;
+  margin-top: 20px;
+  font-family: "Press Start 2P", cursive;
 }

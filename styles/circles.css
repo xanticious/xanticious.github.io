@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  margin-top: 40px;
   padding: 0;
   font-family: Arial, sans-serif;
   background-color: #f0f8ff;
@@ -20,11 +21,16 @@ body {
   margin: 0px auto;
 }
 
+.clear-filters-btn {
+  left: 400px;
+}
+
 h2 {
   font-size: 1.8rem;
   color: #007acc;
   margin-bottom: 15px;
   text-align: center;
+  cursor: pointer;
 }
 
 .category {
@@ -60,6 +66,87 @@ h2 {
   height: 1000px;
 }
 
+/* Category-specific colors based on category ID (slug handling) */
+.category[data-category-id="home_favorites"] h2 {
+  color: #ff6b6b;
+}
+
+.category[data-category-id="work_favorites"] h2 {
+  color: #4ecdc4;
+}
+
+.category[data-category-id="tools"] h2 {
+  color: #45b7d1;
+}
+
+.category[data-category-id="work"] h2 {
+  color: #96ceb4;
+}
+
+.category[data-category-id="environments"] h2 {
+  color: #feca57;
+}
+
+.category[data-category-id="documentation"] h2 {
+  color: #ff9ff3;
+}
+
+.category[data-category-id="word_games"] h2 {
+  color: #54a0ff;
+}
+
+.category[data-category-id="streaming_services"] h2 {
+  color: #5f27cd;
+}
+
+.category[data-category-id="programming_humor"] h2 {
+  color: #00d2d3;
+}
+
+.category[data-category-id="for_musicians"] h2 {
+  color: #ff6348;
+}
+
+.category[data-category-id="shopping"] h2 {
+  color: #2ed573;
+}
+
+.category[data-category-id="streaming_music"] h2 {
+  color: #ff4757;
+}
+
+.category[data-category-id="news"] h2 {
+  color: #3742fa;
+}
+
+.category[data-category-id="e_learning"] h2 {
+  color: #2f3542;
+}
+
+.category[data-category-id="for_developers"] h2 {
+  color: #ff3838;
+}
+
+.category[data-category-id="for_researchers"] h2 {
+  color: #8c7ae6;
+}
+
+.category[data-category-id="tech"] h2 {
+  color: #00a8ff;
+}
+
+.category[data-category-id="social_media"] h2 {
+  color: #e84118;
+}
+
+.category[data-category-id="ai"] h2 {
+  color: #9c88ff;
+}
+
+.category[data-category-id="maps_and_weather"] h2 {
+  color: #0984e3;
+}
+
 .links {
   position: absolute;
   top: 50%;
@@ -73,12 +160,14 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  pointer-events: none;
 }
 
 .links li {
   position: absolute;
   transform-origin: center;
   list-style: none;
+  pointer-events: auto;
 }
 
 .links li:nth-child(1) {
@@ -191,4 +280,185 @@ h2 {
   font-size: 0.9rem;
   text-align: center;
   color: #333;
+}
+
+/* Category-specific link styling with accent colors */
+.category[data-category-id="home_favorites"] .links li a {
+  border: 3px solid #ff6b6b;
+}
+
+.category[data-category-id="home_favorites"] .links li a:hover {
+  background-color: #ffe0e0;
+  border-color: #ff5252;
+}
+
+.category[data-category-id="work_favorites"] .links li a {
+  border: 3px solid #4ecdc4;
+}
+
+.category[data-category-id="work_favorites"] .links li a:hover {
+  background-color: #e0f7f5;
+  border-color: #26d0ce;
+}
+
+.category[data-category-id="tools"] .links li a {
+  border: 3px solid #45b7d1;
+}
+
+.category[data-category-id="tools"] .links li a:hover {
+  background-color: #e1f5fe;
+  border-color: #2196f3;
+}
+
+.category[data-category-id="work"] .links li a {
+  border: 3px solid #96ceb4;
+}
+
+.category[data-category-id="work"] .links li a:hover {
+  background-color: #e8f5e8;
+  border-color: #4caf50;
+}
+
+.category[data-category-id="environments"] .links li a {
+  border: 3px solid #feca57;
+}
+
+.category[data-category-id="environments"] .links li a:hover {
+  background-color: #fff8e1;
+  border-color: #ffc107;
+}
+
+.category[data-category-id="documentation"] .links li a {
+  border: 3px solid #ff9ff3;
+}
+
+.category[data-category-id="documentation"] .links li a:hover {
+  background-color: #fce4ec;
+  border-color: #e91e63;
+}
+
+.category[data-category-id="word_games"] .links li a {
+  border: 3px solid #54a0ff;
+}
+
+.category[data-category-id="word_games"] .links li a:hover {
+  background-color: #e3f2fd;
+  border-color: #2196f3;
+}
+
+.category[data-category-id="streaming_services"] .links li a {
+  border: 3px solid #5f27cd;
+}
+
+.category[data-category-id="streaming_services"] .links li a:hover {
+  background-color: #f3e5f5;
+  border-color: #9c27b0;
+}
+
+.category[data-category-id="programming_humor"] .links li a {
+  border: 3px solid #00d2d3;
+}
+
+.category[data-category-id="programming_humor"] .links li a:hover {
+  background-color: #e0f2f1;
+  border-color: #009688;
+}
+
+.category[data-category-id="for_musicians"] .links li a {
+  border: 3px solid #ff6348;
+}
+
+.category[data-category-id="for_musicians"] .links li a:hover {
+  background-color: #ffebee;
+  border-color: #f44336;
+}
+
+.category[data-category-id="shopping"] .links li a {
+  border: 3px solid #2ed573;
+}
+
+.category[data-category-id="shopping"] .links li a:hover {
+  background-color: #e8f5e8;
+  border-color: #4caf50;
+}
+
+.category[data-category-id="streaming_music"] .links li a {
+  border: 3px solid #ff4757;
+}
+
+.category[data-category-id="streaming_music"] .links li a:hover {
+  background-color: #ffebee;
+  border-color: #f44336;
+}
+
+.category[data-category-id="news"] .links li a {
+  border: 3px solid #3742fa;
+}
+
+.category[data-category-id="news"] .links li a:hover {
+  background-color: #e8eaf6;
+  border-color: #3f51b5;
+}
+
+.category[data-category-id="e_learning"] .links li a {
+  border: 3px solid #2f3542;
+}
+
+.category[data-category-id="e_learning"] .links li a:hover {
+  background-color: #fafafa;
+  border-color: #424242;
+}
+
+.category[data-category-id="for_developers"] .links li a {
+  border: 3px solid #ff3838;
+}
+
+.category[data-category-id="for_developers"] .links li a:hover {
+  background-color: #ffebee;
+  border-color: #f44336;
+}
+
+.category[data-category-id="for_researchers"] .links li a {
+  border: 3px solid #8c7ae6;
+}
+
+.category[data-category-id="for_researchers"] .links li a:hover {
+  background-color: #f3e5f5;
+  border-color: #9c27b0;
+}
+
+.category[data-category-id="tech"] .links li a {
+  border: 3px solid #00a8ff;
+}
+
+.category[data-category-id="tech"] .links li a:hover {
+  background-color: #e1f5fe;
+  border-color: #03a9f4;
+}
+
+.category[data-category-id="social_media"] .links li a {
+  border: 3px solid #e84118;
+}
+
+.category[data-category-id="social_media"] .links li a:hover {
+  background-color: #ffebee;
+  border-color: #f44336;
+}
+
+.category[data-category-id="ai"] .links li a {
+  border: 3px solid #9c88ff;
+}
+
+.category[data-category-id="ai"] .links li a:hover {
+  background-color: #f3e5f5;
+  border-color: #9c27b0;
+}
+
+.category[data-category-id="maps_and_weather"] .links li a {
+  border: 3px solid #0984e3;
+}
+
+.category[data-category-id="maps_and_weather"] .links li a:hover {
+  background-color: #e3f2fd;
+  border-color: #2196f3;
 }

@@ -15,6 +15,39 @@
   </head>
   <body>
     <button class="settings-button" onclick="navigateToSettings()"></button>
+
+    <!-- Search Container with Clear Button -->
+    <div class="search-wrapper">
+      <div class="search-container">
+        <input
+          type="text"
+          id="searchBox"
+          placeholder="Search links..."
+          autocomplete="off"
+        />
+      </div>
+      <!-- Clear Filters Button (hidden by default) -->
+      <button
+        id="clearFiltersBtn"
+        class="clear-filters-btn"
+        onclick="clearSearch()"
+        style="display: none"
+      >
+        Clear Filters
+      </button>
+    </div>
+
+    <!-- No Results Message (hidden by default) -->
+    <div id="noResultsMessage" class="no-results" style="display: none">
+      <h2>No links found</h2>
+      <p>
+        Try adjusting your search terms or
+        <button onclick="clearSearch()" class="clear-link">
+          clear filters
+        </button>
+      </p>
+    </div>
+
     <div id="container" class="container"></div>
 
     <script>
@@ -48,6 +81,148 @@
       }
 
       loadSettings();
+
+      // Global variables for search functionality
+      let allData = [];
+      let categoryMap = {};
+
+      // Search and filtering functions
+      function initializeSearch() {
+        const searchBox = document.getElementById("searchBox");
+        const urlParams = new URLSearchParams(window.location.search);
+        const searchQuery = urlParams.get("search");
+
+        if (searchQuery) {
+          searchBox.value = searchQuery;
+          performSearch(searchQuery);
+        }
+
+        searchBox.addEventListener("input", (e) => {
+          const query = e.target.value.trim();
+          if (query) {
+            updateURL(query);
+            performSearch(query);
+          } else {
+            clearSearch();
+          }
+        });
+      }
+
+      function updateURL(searchQuery) {
+        const url = new URL(window.location);
+        if (searchQuery) {
+          url.searchParams.set("search", searchQuery);
+        } else {
+          url.searchParams.delete("search");
+        }
+        window.history.replaceState({}, "", url);
+      }
+
+      function performSearch(query) {
+        if (!query) {
+          clearSearch();
+          return;
+        }
+
+        const searchTerms = query
+          .toLowerCase()
+          .split(" ")
+          .filter((term) => term.length > 0);
+        let hasVisibleResults = false;
+
+        // Show clear filters button
+        document.getElementById("clearFiltersBtn").style.display = "block";
+
+        // Filter categories and links
+        document.querySelectorAll(".category").forEach((categoryDiv) => {
+          const categoryId = categoryDiv.dataset.categoryId;
+          const categoryName = categoryMap[categoryId]?.toLowerCase() || "";
+          let categoryHasVisibleLinks = false;
+
+          // Check if category name matches search
+          const categoryMatches = searchTerms.some(
+            (term) =>
+              categoryName.includes(term) ||
+              categoryId.toLowerCase().includes(term)
+          );
+
+          categoryDiv.querySelectorAll(".links li").forEach((linkItem) => {
+            const linkText = linkItem.textContent.toLowerCase();
+            const linkData = linkItem.dataset;
+
+            // Check if link matches search terms
+            const linkMatches = searchTerms.some((term) => {
+              return (
+                linkText.includes(term) ||
+                (linkData.shortName &&
+                  linkData.shortName.toLowerCase().includes(term)) ||
+                (linkData.url && linkData.url.toLowerCase().includes(term))
+              );
+            });
+
+            if (linkMatches || categoryMatches) {
+              linkItem.classList.remove("hidden");
+              categoryHasVisibleLinks = true;
+              hasVisibleResults = true;
+            } else {
+              linkItem.classList.add("hidden");
+            }
+          });
+
+          // Show/hide category based on whether it has visible links
+          if (categoryHasVisibleLinks || categoryMatches) {
+            categoryDiv.classList.remove("hidden");
+            if (categoryMatches && !categoryHasVisibleLinks) {
+              // Show all links if category name matches
+              categoryDiv.querySelectorAll(".links li").forEach((li) => {
+                li.classList.remove("hidden");
+                hasVisibleResults = true;
+              });
+            }
+          } else {
+            categoryDiv.classList.add("hidden");
+          }
+        });
+
+        document.getElementById("container").style.display = hasVisibleResults
+          ? "block"
+          : "none";
+
+        // Show/hide no results message
+        document.getElementById("noResultsMessage").style.display =
+          hasVisibleResults ? "none" : "block";
+      }
+
+      function clearSearch() {
+        document.getElementById("searchBox").value = "";
+        document.getElementById("clearFiltersBtn").style.display = "none";
+        document.getElementById("noResultsMessage").style.display = "none";
+        document.getElementById("container").style.display = "block";
+
+        // Remove URL parameter
+        updateURL("");
+
+        // Show all categories and links
+        document.querySelectorAll(".category, .links li").forEach((el) => {
+          el.classList.remove("hidden");
+        });
+      }
+
+      function createCategoryAnchor(categoryId, categoryName) {
+        const heading = document.createElement("h2");
+        heading.textContent = categoryName;
+        heading.id = categoryId;
+        heading.addEventListener("click", () => {
+          const url = new URL(window.location);
+          url.hash = categoryId;
+          window.history.pushState({}, "", url);
+          document
+            .getElementById(categoryId)
+            .scrollIntoView({ behavior: "smooth" });
+        });
+        return heading;
+      }
+
       async function loadData() {
         try {
           // Get user settings to determine if we should show work-only categories
@@ -71,8 +246,11 @@
           });
 
           // Create a lookup for category names by ID
-          const categoryMap = {};
+          categoryMap = {};
           filteredCategories.forEach((cat) => (categoryMap[cat.id] = cat.name));
+
+          // Store data globally for search functionality
+          allData = filteredCategories;
 
           // Load URLs for each category
           const categorizedLinks = {};
@@ -100,9 +278,12 @@
 
             const categoryDiv = document.createElement("div");
             categoryDiv.classList.add("category");
+            categoryDiv.dataset.categoryId = cat.id;
 
-            const heading = document.createElement("h2");
-            heading.textContent = categoryMap[cat.id] || cat.id;
+            const heading = createCategoryAnchor(
+              cat.id,
+              categoryMap[cat.id] || cat.id
+            );
             categoryDiv.appendChild(heading);
 
             const ul = document.createElement("ul");
@@ -113,6 +294,9 @@
               .forEach(
                 ({ url, name, shortName, faviconName, faviconExtension }) => {
                   const li = document.createElement("li");
+                  li.dataset.shortName = shortName;
+                  li.dataset.url = url;
+
                   const a = document.createElement("a");
                   a.href = url;
 
@@ -136,6 +320,9 @@
             categoryDiv.appendChild(ul);
             container.appendChild(categoryDiv);
           });
+
+          // Initialize search functionality after DOM is built
+          initializeSearch();
         } catch (error) {
           console.error("Error loading data:", error);
         }
