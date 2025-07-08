@@ -265,11 +265,31 @@
 
             // Check if link matches search terms
             const linkMatches = searchTerms.some((term) => {
+              // Function to normalize URL for domain matching
+              function normalizeUrlForMatching(url) {
+                try {
+                  const urlObj = new URL(url);
+                  let hostname = urlObj.hostname;
+                  // Remove 'www.' prefix
+                  hostname = hostname.replace(/^www\./, "");
+                  // Remove top-level domain (everything after the last dot)
+                  hostname = hostname.replace(/\.[^.]+$/, "");
+                  // Combine all remaining parts without dots
+                  return hostname.replace(/\./g, "");
+                } catch {
+                  // If URL parsing fails, return original string without dots
+                  return url.replace(/\./g, "");
+                }
+              }
+
               return (
                 linkText.includes(term) ||
                 (linkData.shortName &&
                   linkData.shortName.toLowerCase().includes(term)) ||
-                (linkData.url && linkData.url.toLowerCase().includes(term))
+                (linkData.url &&
+                  normalizeUrlForMatching(linkData.url.toLowerCase()).includes(
+                    term
+                  ))
               );
             });
 
