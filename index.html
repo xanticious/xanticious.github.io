@@ -18,11 +18,37 @@
 
     <!-- Search Container with Clear Button -->
     <div class="search-wrapper">
+      <!-- Google Search Container -->
+      <div class="google-search-container">
+        <input
+          type="text"
+          id="googleSearchBox"
+          placeholder="Search Google..."
+          autocomplete="off"
+        />
+        <select id="googleSearchType">
+          <option value="all">All</option>
+          <option value="images">Images</option>
+          <option value="videos">Videos</option>
+          <option value="shopping">Shopping</option>
+          <option value="short-videos">Shorts</option>
+          <option value="news">News</option>
+          <option value="forums">Forums</option>
+          <option value="web">Web</option>
+          <option value="maps">Maps</option>
+          <option value="books">Books</option>
+        </select>
+      </div>
+
+      <!-- "Or" separator -->
+      <div class="search-separator">Or</div>
+
+      <!-- Links Search Container -->
       <div class="search-container">
         <input
           type="text"
           id="searchBox"
-          placeholder="Search links..."
+          placeholder="Filter your links..."
           autocomplete="off"
         />
       </div>
@@ -81,6 +107,93 @@
       }
 
       loadSettings();
+
+      // Initialize Google search functionality
+      function initializeGoogleSearch() {
+        const googleSearchBox = document.getElementById("googleSearchBox");
+        const googleSearchType = document.getElementById("googleSearchType");
+
+        // Focus on Google search box when page loads
+        window.addEventListener("load", () => {
+          googleSearchBox.focus();
+        });
+
+        // Handle enter key press in Google search box
+        googleSearchBox.addEventListener("keypress", (e) => {
+          if (e.key === "Enter") {
+            performGoogleSearch();
+          }
+        });
+
+        function performGoogleSearch() {
+          const query = googleSearchBox.value.trim();
+          if (!query) return;
+
+          const searchType = googleSearchType.value;
+          let searchUrl = "";
+
+          switch (searchType) {
+            case "all":
+              searchUrl = `https://www.google.com/search?q=${encodeURIComponent(
+                query
+              )}`;
+              break;
+            case "images":
+              searchUrl = `https://www.google.com/search?q=${encodeURIComponent(
+                query
+              )}&tbm=isch`;
+              break;
+            case "videos":
+              searchUrl = `https://www.google.com/search?q=${encodeURIComponent(
+                query
+              )}&tbm=vid`;
+              break;
+            case "shopping":
+              searchUrl = `https://www.google.com/search?q=${encodeURIComponent(
+                query
+              )}&tbm=shop`;
+              break;
+            case "short-videos":
+              searchUrl = `https://www.google.com/search?q=${encodeURIComponent(
+                query
+              )}&tbm=vid&tbs=dur:s`;
+              break;
+            case "news":
+              searchUrl = `https://www.google.com/search?q=${encodeURIComponent(
+                query
+              )}&tbm=nws`;
+              break;
+            case "forums":
+              searchUrl = `https://www.google.com/search?q=${encodeURIComponent(
+                query
+              )}&tbm=dis`;
+              break;
+            case "web":
+              searchUrl = `https://www.google.com/search?q=${encodeURIComponent(
+                query
+              )}`;
+              break;
+            case "maps":
+              searchUrl = `https://www.google.com/maps/search/${encodeURIComponent(
+                query
+              )}`;
+              break;
+            case "books":
+              searchUrl = `https://www.google.com/search?q=${encodeURIComponent(
+                query
+              )}&tbm=bks`;
+              break;
+            default:
+              searchUrl = `https://www.google.com/search?q=${encodeURIComponent(
+                query
+              )}`;
+          }
+
+          window.location.href = searchUrl;
+        }
+      }
+
+      initializeGoogleSearch();
 
       // Global variables for search functionality
       let allData = [];
