@@ -17,7 +17,8 @@
         "implemented": true
       },
       { "value": "Circles", "label": "Bubbles / Circles", "implemented": true },
-      { "value": "Speed-Dial", "label": "Speed Dial", "implemented": true }
+      { "value": "Speed-Dial", "label": "Speed Dial", "implemented": true },
+      { "value": "Smart-Phone", "label": "Smart Phone", "implemented": true }
     ],
     "Games": [
       { "value": "Card-Game", "label": "Card Game", "implemented": true },
