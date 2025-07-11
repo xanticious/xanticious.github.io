@@ -83,9 +83,6 @@ Currently using manual testing procedures:
 Tested on:
 
 - Chrome/Chromium-based browsers
-- Firefox
-- Safari
-- Edge
 
 ## Project Structure
 
