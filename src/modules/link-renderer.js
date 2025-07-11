@@ -30,6 +30,11 @@ export class LinkRenderer {
 
       this.buildCategoryMap(filteredCategories);
 
+      // Add recent category if enabled
+      if (settings.showRecent) {
+        this.renderRecentCategory();
+      }
+
       const categorizedLinks = await this.loadUrlsForCategories(
         filteredCategories
       );
@@ -59,6 +64,27 @@ export class LinkRenderer {
     categories.forEach((cat) => {
       this.categoryMap[cat.id] = cat.name;
     });
+  }
+
+  renderRecentCategory() {
+    const recentItems = StorageManager.getRecentItems();
+    if (recentItems.length === 0) {
+      return;
+    }
+
+    const recentCategory = {
+      id: "recent",
+      name: "Recent",
+    };
+
+    const categoryDiv = this.createCategoryElement(recentCategory);
+    const linksList = this.createLinksList(recentItems);
+
+    categoryDiv.appendChild(linksList);
+    this.container.appendChild(categoryDiv);
+
+    // Add to category map
+    this.categoryMap["recent"] = "Recent";
   }
 
   async loadUrlsForCategories(categories) {
@@ -174,6 +200,15 @@ export class LinkRenderer {
     a.appendChild(img);
     a.appendChild(span);
 
+    // Add event listeners to track recent items
+    this.addRecentTrackingListeners(a, {
+      url,
+      name,
+      shortName,
+      faviconName,
+      faviconExtension,
+    });
+
     return a;
   }
 
@@ -184,5 +219,42 @@ export class LinkRenderer {
         alt: name,
       },
     });
+  }
+
+  addRecentTrackingListeners(linkElement, urlData) {
+    // Track left clicks
+    linkElement.addEventListener("click", (e) => {
+      this.trackRecentItem(urlData);
+    });
+
+    // Track middle clicks (typically opens in new tab)
+    linkElement.addEventListener("mousedown", (e) => {
+      if (e.button === 1) {
+        // Middle mouse button
+        this.trackRecentItem(urlData);
+      }
+    });
+
+    // Track keyboard navigation (Enter key)
+    linkElement.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        this.trackRecentItem(urlData);
+      }
+    });
+
+    // Track context menu actions (right-click)
+    linkElement.addEventListener("contextmenu", (e) => {
+      // Small delay to allow for "open in new tab" actions
+      setTimeout(() => {
+        this.trackRecentItem(urlData);
+      }, 100);
+    });
+  }
+
+  trackRecentItem(urlData) {
+    const settings = StorageManager.getSettings();
+    if (settings.showRecent) {
+      StorageManager.addRecentItem(urlData);
+    }
   }
 }

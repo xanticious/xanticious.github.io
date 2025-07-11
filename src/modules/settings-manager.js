@@ -5,7 +5,12 @@ import { StorageManager } from "../utils/storage.js";
  */
 export class SettingsManager {
   constructor() {
-    this.defaultSettings = { type: "Home", style: "Modern" };
+    this.defaultSettings = {
+      type: "Home",
+      style: "Modern",
+      showRecent: true,
+      recentItemsCount: 10,
+    };
   }
 
   async loadAndApplySettings() {

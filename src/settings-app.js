@@ -9,13 +9,24 @@ export class SettingsApp {
   constructor() {
     this.typeSelect = null;
     this.styleSelect = null;
+    this.showRecentCheckbox = null;
+    this.recentItemsCountInput = null;
+    this.recentItemsContainer = null;
   }
 
   async initialize() {
     this.typeSelect = DOMUtils.getElement("#type");
     this.styleSelect = DOMUtils.getElement("#style");
+    this.showRecentCheckbox = DOMUtils.getElement("#showRecent");
+    this.recentItemsCountInput = DOMUtils.getElement("#recentItemsCount");
+    this.recentItemsContainer = DOMUtils.getElement("#recentItemsContainer");
 
-    if (!this.typeSelect || !this.styleSelect) {
+    if (
+      !this.typeSelect ||
+      !this.styleSelect ||
+      !this.showRecentCheckbox ||
+      !this.recentItemsCountInput
+    ) {
       console.error("Settings form elements not found");
       return;
     }
@@ -23,6 +34,7 @@ export class SettingsApp {
     await this.loadAndPopulateStyles();
     this.loadCurrentSettings();
     this.sortTypeOptions();
+    this.setupEventListeners();
     this.setupGlobalFunctions();
   }
 
@@ -58,6 +70,23 @@ export class SettingsApp {
     const savedSettings = StorageManager.getSettings();
     this.typeSelect.value = savedSettings.type;
     this.styleSelect.value = savedSettings.style;
+    this.showRecentCheckbox.checked = savedSettings.showRecent;
+    this.recentItemsCountInput.value = savedSettings.recentItemsCount;
+    this.updateRecentItemsVisibility();
+  }
+
+  setupEventListeners() {
+    this.showRecentCheckbox.addEventListener("change", () => {
+      this.updateRecentItemsVisibility();
+    });
+  }
+
+  updateRecentItemsVisibility() {
+    if (this.recentItemsContainer) {
+      this.recentItemsContainer.style.display = this.showRecentCheckbox.checked
+        ? "block"
+        : "none";
+    }
   }
 
   sortTypeOptions() {
@@ -68,9 +97,18 @@ export class SettingsApp {
   }
 
   saveSettings() {
+    const recentItemsCount = parseInt(this.recentItemsCountInput.value);
+
+    if (recentItemsCount < 1) {
+      alert("Recent items count must be at least 1.");
+      return;
+    }
+
     const settings = {
       type: this.typeSelect.value,
       style: this.styleSelect.value,
+      showRecent: this.showRecentCheckbox.checked,
+      recentItemsCount: recentItemsCount,
     };
 
     const success = StorageManager.saveSettings(settings);
