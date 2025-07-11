@@ -76,53 +76,6 @@
       </div>
       <button onclick="saveSettings()">Save</button>
     </div>
-    <script>
-      async function loadStyles() {
-        const response = await fetch("data/styles.json");
-        const data = await response.json();
-        const styleSelect = document.getElementById("style");
-
-        // Flatten all styles from all categories and filter for implemented
-        const allStyles = Object.values(data.styles)
-          .flat()
-          .filter((style) => style.implemented);
-
-        allStyles
-          .sort((a, b) => a.label.localeCompare(b.label)) // Sort styles alphabetically
-          .forEach((style) => {
-            const option = document.createElement("option");
-            option.value = style.value;
-            option.textContent = style.label;
-            styleSelect.appendChild(option);
-          });
-      }
-
-      async function loadSettings() {
-        await loadStyles();
-        const savedSettings = JSON.parse(localStorage.getItem("userSettings"));
-        if (savedSettings) {
-          document.getElementById("type").value = savedSettings.type;
-          document.getElementById("style").value = savedSettings.style;
-        }
-
-        // Sort "Type" options alphabetically
-        const typeSelect = document.getElementById("type");
-        const options = Array.from(typeSelect.options);
-        options
-          .sort((a, b) => a.text.localeCompare(b.text))
-          .forEach((option) => typeSelect.appendChild(option));
-      }
-
-      loadSettings();
-
-      function saveSettings() {
-        const type = document.getElementById("type").value;
-        const style = document.getElementById("style").value;
-
-        const settings = { type, style };
-        localStorage.setItem("userSettings", JSON.stringify(settings));
-        window.location.href = "index.html";
-      }
-    </script>
+    <script type="module" src="src/settings-app.js"></script>
   </body>
 </html>
