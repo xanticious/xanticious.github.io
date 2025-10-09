@@ -14,28 +14,28 @@
       "faviconExtension": "ico"
     },
     {
-      "url": "https://jira.sirsidynix.com/secure/RapidBoard.jspa?rapidView=367",
+      "url": "https://sirsidynix.atlassian.net/jira/software/c/projects/BCD/boards/169",
       "name": "Jira",
       "shortName": "jira",
       "faviconName": "sd_favicon",
       "faviconExtension": "png"
     },
     {
-      "url": "https://bitbucket.sirsi.pvt/projects/BCUI/repos/bcd-ui/browse",
+      "url": "https://bitbucket.org/sirsidynix/patron/src/master/",
       "name": "BitBucket (Patron)",
       "shortName": "bitbucket_patron",
       "faviconName": "sd_favicon",
       "faviconExtension": "png"
     },
     {
-      "url": "https://bitbucket.sirsi.pvt/projects/BCUI/repos/bcd-ui/browse",
+      "url": "https://bitbucket.org/sirsidynix/bcd-ui/src/master/",
       "name": "BitBucket (BCD-UI)",
       "shortName": "bitbucket_ui",
       "faviconName": "sd_favicon",
       "faviconExtension": "png"
     },
     {
-      "url": "https://collab.sirsi.pvt/pages/viewpage.action?pageId=138143633",
+      "url": "https://sirsidynix.atlassian.net/wiki/spaces/ENG/pages/145488471/Phobos",
       "name": "Confluence",
       "shortName": "confluence",
       "faviconName": "sd_favicon",
@@ -97,7 +97,7 @@
       "faviconExtension": "ico"
     },
     {
-      "url": "https://jira.sirsidynix.com/secure/TimesheetReport.jspa?reportKey=jira-timesheet-plugin%3Areport&selectedProjectId=11752&reportingDay=1&startDate=2023-01-01&endDate=2023-02-09&targetUser=anthony.litchfield&projectRoleId=&filterid=&priority=&commentfirstword=&weekends=true&showDetails=true&sum=day&groupByField=&sortBy=&sortDir=ASC&Next=Next",
+      "url": "https://sirsidynix.atlassian.net/jira/dashboards/10182",
       "name": "Time Log Report",
       "shortName": "time_log_report",
       "faviconName": "sd_favicon",
@@ -128,7 +128,7 @@
       "faviconExtension": "ico"
     },
     {
-      "url": "https://collab.sirsi.pvt/pages/viewpage.action?pageId=41913309",
+      "url": "https://sirsidynix.atlassian.net/wiki/spaces/ENG/pages/145284861/Poly+JIRA+Functional+Investigate+Template",
       "name": "Jira Templates",
       "shortName": "jira_templates",
       "faviconName": "sd_favicon",
