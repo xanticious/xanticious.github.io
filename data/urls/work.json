@@ -91,6 +91,12 @@
       "faviconExtension": "ico"
     },
     {
+      "url": "https://jenkins.sirsidynix.com/job/bluec-ssos/",
+      "name": "Newest Jenkins",
+      "shortName": "newest_jenkins",
+      "faviconExtension": "ico"
+    },
+    {
       "url": "https://marvelapp.com/bhi8da4/screen/58437871bhi8da4/screen/58437871",
       "name": "Style Guide",
       "shortName": "style_guide",
