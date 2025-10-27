@@ -14,7 +14,7 @@
       "faviconExtension": "ico"
     },
     {
-      "url": "https://sirsidynix.atlassian.net/jira/software/c/projects/BCD/boards/169",
+      "url": "https://sirsidynix.atlassian.net/jira/software/c/projects/BCD/boards/179",
       "name": "Jira",
       "shortName": "jira",
       "faviconName": "sd_favicon",
@@ -101,13 +101,6 @@
       "name": "Style Guide",
       "shortName": "style_guide",
       "faviconExtension": "ico"
-    },
-    {
-      "url": "https://sirsidynix.atlassian.net/jira/dashboards/10182",
-      "name": "Time Log Report",
-      "shortName": "time_log_report",
-      "faviconName": "sd_favicon",
-      "faviconExtension": "png"
     },
     {
       "url": "http://jsds-splunk-server.bcc.sirsi.pvt:8000/en-US/app/search/search?q=search%20host%3D%22teamx*%22%20NOT%20%22healthcheck%2Falive%22%20NOT%20%22actuator%2Fhealth%22%20NOT%20%22status%2Fhealth%22&display.page.search.mode=smart&dispatch.sample_ratio=1&earliest=-60m%40m&latest=now&display.general.type=events&display.visualizations.charting.chart=bar&display.page.search.tab=events&sid=1572033568.13838",
