@@ -79,6 +79,12 @@
       "faviconExtension": "webp"
     },
     {
+      "url": "https://myapps.microsoft.com/",
+      "name": "Harris Apps",
+      "shortName": "harris_apps",
+      "faviconExtension": "webp"
+    },
+    {
       "url": "https://jenkins/view/Knights/job/TeamXUpgrade/",
       "name": "Old Jenkins",
       "shortName": "old_jenkins",
