@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Background -->
+  <rect width="32" height="32" rx="5" fill="#111111"/>
+
+  <!--
+    Impossible cube (Penrose cube) constructed from three rhombus faces.
+    Vertices of an isometric cube centered at (16, 16):
+      Top center:    (16,  5)
+      Left:          ( 5, 11.5)
+      Right:         (27, 11.5)
+      Bottom-left:   ( 5, 20.5)
+      Bottom-right:  (27, 20.5)
+      Bottom center: (16, 27)
+      Center:        (16, 16)
+  -->
+
+  <!-- Top face (lightest green) -->
+  <polygon
+    points="16,5 27,11.5 16,18 5,11.5"
+    fill="#52b788"
+    stroke="#111111"
+    stroke-width="0.7"
+  />
+
+  <!-- Left face (mid green) -->
+  <polygon
+    points="5,11.5 16,18 16,27 5,20.5"
+    fill="#2d6a4f"
+    stroke="#111111"
+    stroke-width="0.7"
+  />
+
+  <!-- Right face (dark green) -->
+  <polygon
+    points="27,11.5 27,20.5 16,27 16,18"
+    fill="#1b4332"
+    stroke="#111111"
+    stroke-width="0.7"
+  />
+
+  <!--
+    Impossible twist: overdraw the top-left edge of the top face on top of
+    the left face's top-right edge, creating the visual paradox.
+    The front-left vertical strut passes IN FRONT of the top face corner.
+  -->
+  <!-- Left strut — drawn over top face to create illusion -->
+  <line x1="5" y1="11.5" x2="5" y2="20.5" stroke="#52b788" stroke-width="1.8" stroke-linecap="round"/>
+  <!-- Right strut -->
+  <line x1="27" y1="11.5" x2="27" y2="20.5" stroke="#1b4332" stroke-width="1.8" stroke-linecap="round"/>
+  <!-- Bottom strut -->
+  <line x1="5" y1="20.5" x2="16" y2="27" stroke="#2d6a4f" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="27" y1="20.5" x2="16" y2="27" stroke="#1b4332" stroke-width="1.8" stroke-linecap="round"/>
+  <!-- Top-left edge of top face drawn over left face — the impossible part -->
+  <line x1="5" y1="11.5" x2="16" y2="5" stroke="#52b788" stroke-width="1.8" stroke-linecap="round"/>
+  <!-- Top-right edge -->
+  <line x1="16" y1="5" x2="27" y2="11.5" stroke="#52b788" stroke-width="1.8" stroke-linecap="round"/>
+  <!-- Center vertical -->
+  <line x1="16" y1="5" x2="16" y2="18" stroke="#111111" stroke-width="0.9"/>
+  <line x1="16" y1="18" x2="16" y2="27" stroke="#2d6a4f" stroke-width="1.4" stroke-linecap="round"/>
+</svg>

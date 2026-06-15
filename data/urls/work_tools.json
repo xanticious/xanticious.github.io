@@ -1,0 +1,43 @@
+{
+  "category": "work_tools",
+  "urls": [
+    {
+      "url": "https://jenkins.sirsidynix.com/job/alitchfield-vibe-beautiful-markdown-viewer/job/main/Beautiful_20Markdown_20Viewer",
+      "name": "Beautiful Markdown Viewer",
+      "shortName": "beautiful_markdown_viewer",
+      "faviconExtension": "svg"
+    },
+    {
+      "url": "https://jenkins.sirsidynix.com/job/alitchfield-vibe-todo-list/job/main/Lightning_20Todo_20App",
+      "name": "Lightning Todo",
+      "shortName": "lightning_todo",
+      "faviconExtension": "svg"
+    },
+    {
+      "url": "https://jenkins.sirsidynix.com/job/ncoe-ilsws-viewer/job/master/IlsWs_20Viewer/",
+      "name": "IlsWs Viewer",
+      "shortName": "ilsws_viewer",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://jenkins.sirsidynix.com/job/alitchfield-xhtml-viewer/job/master/Jest_20Snapshot_20Viewer",
+      "name": "XHTML Viewer",
+      "shortName": "xhtml_viewer",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://matcha.harriscomputer.com/",
+      "name": "Matcha AI",
+      "shortName": "matcha_ai",
+      "faviconName": "matcha",
+      "faviconExtension": "svg"
+    },
+    {
+      "url": "https://matcha.harriscomputer.com/media-studio",
+      "name": "Matcha Media Studio",
+      "shortName": "matcha_media_studio",
+      "faviconName": "matcha",
+      "faviconExtension": "svg"
+    }
+  ]
+}

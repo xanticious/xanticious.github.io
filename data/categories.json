@@ -3,6 +3,13 @@
   { "id": "work_favorites", "name": "Work Favorites", "isWorkOnly": true },
   { "id": "tools", "name": "Tools", "isWorkOnly": false },
   { "id": "work", "name": "Work", "isWorkOnly": true },
+  { "id": "work_tools", "name": "Work Tools", "isWorkOnly": true },
+  {
+    "id": "work_experiments",
+    "name": "Work Experiments",
+    "isWorkOnly": true
+  },
+  { "id": "personal_apps", "name": "Personal Apps", "isWorkOnly": false },
   { "id": "environments", "name": "Environments", "isWorkOnly": true },
   { "id": "documentation", "name": "Documentation", "isWorkOnly": false },
   { "id": "word_games", "name": "Word Games", "isWorkOnly": false },

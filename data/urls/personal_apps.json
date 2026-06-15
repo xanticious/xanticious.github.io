@@ -1,0 +1,65 @@
+{
+  "category": "personal_apps",
+  "urls": [
+    {
+      "url": "https://xanticious.github.io/soma-cube-solver/",
+      "name": "Soma Cube Solver",
+      "shortName": "soma_cube_solver",
+      "faviconName": "personal_apps",
+      "faviconExtension": "svg"
+    },
+    {
+      "url": "https://xanticious.github.io/weekly-calendar/",
+      "name": "Weekly Calendar Creator",
+      "shortName": "weekly_calendar_creator",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://xanticious.github.io/idle-cannon/",
+      "name": "Idle Cannon",
+      "shortName": "idle_cannon",
+      "faviconName": "personal_apps",
+      "faviconExtension": "svg"
+    },
+    {
+      "url": "https://xanticious.github.io/personal-website/",
+      "name": "Personal Website",
+      "shortName": "personal_website",
+      "faviconExtension": "svg"
+    },
+    {
+      "url": "https://github.com/xanticious/create-spa-webapp",
+      "name": "Scaffolding SPA",
+      "shortName": "scaffolding_spa",
+      "faviconName": "github_dark",
+      "faviconExtension": "png"
+    },
+    {
+      "url": "https://xanticious.github.io/choose-your-adventure-book/",
+      "name": "Choose Your Adventure Book",
+      "shortName": "choose_your_adventure_book",
+      "faviconName": "personal_apps",
+      "faviconExtension": "svg"
+    },
+    {
+      "url": "https://github.com/xanticious/html-css-extractor",
+      "name": "HTML/CSS Extractor",
+      "shortName": "html_css_extractor",
+      "faviconName": "github_dark",
+      "faviconExtension": "png"
+    },
+    {
+      "url": "https://xanticious.github.io/word-games/",
+      "name": "Word Games",
+      "shortName": "word_games_personal",
+      "faviconName": "personal_apps",
+      "faviconExtension": "svg"
+    },
+    {
+      "url": "https://xanticious.github.io/revolvoman-clone/",
+      "name": "Revolvoman Clone",
+      "shortName": "revolvoman_clone",
+      "faviconExtension": "ico"
+    }
+  ]
+}

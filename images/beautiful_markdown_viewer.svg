@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="32" height="32">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#36a86d"/>
+      <stop offset="100%" stop-color="#246b41"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded green background -->
+  <rect width="64" height="64" rx="12" fill="url(#bg)"/>
+
+  <!-- Markdown logo: M with downward arrow -->
+  <!-- M shape: bottom-left → top-left → center-dip → top-right → bottom-right -->
+  <path
+    d="M5 42 L5 11 L32 29 L59 11 L59 42"
+    fill="none"
+    stroke="white"
+    stroke-width="8"
+    stroke-linejoin="round"
+    stroke-linecap="round"
+  />
+
+  <!-- Down arrow shaft (centered beneath M) -->
+  <rect x="26" y="41" width="12" height="13" fill="white"/>
+
+  <!-- Down arrow head -->
+  <polygon points="14,51 32,62 50,51" fill="white"/>
+</svg>

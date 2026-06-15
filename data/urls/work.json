@@ -42,30 +42,6 @@
       "faviconExtension": "png"
     },
     {
-      "url": "https://sirsidynix.zoom.us/j/2166302779",
-      "name": "Zoom (Phobos Standup)",
-      "shortName": "zoom_phobos_standup",
-      "faviconExtension": "ico"
-    },
-    {
-      "url": "https://sirsidynix.zoom.us/j/99896748731",
-      "name": "Zoom (Phobos Room)",
-      "shortName": "zoom_phobos_room",
-      "faviconExtension": "ico"
-    },
-    {
-      "url": "https://sirsidynix.zoom.us/my/courselists",
-      "name": "Zoom (Andy's)",
-      "shortName": "zoom_andys",
-      "faviconExtension": "ico"
-    },
-    {
-      "url": "https://sirsidynix.zoom.us/my/search2",
-      "name": "Zoom (Craig's)",
-      "shortName": "zoom_craigs",
-      "faviconExtension": "ico"
-    },
-    {
       "url": "http://intranet/",
       "name": "Intranet",
       "shortName": "intranet",
@@ -137,12 +113,6 @@
       "name": "Jira Templates",
       "shortName": "jira_templates",
       "faviconName": "sd_favicon",
-      "faviconExtension": "png"
-    },
-    {
-      "url": "https://marvelapp.com/projects/my",
-      "name": "Marvel Mockups",
-      "shortName": "marvel_mockups",
       "faviconExtension": "png"
     },
     {
