@@ -19,6 +19,7 @@
       "name": "Idle Cannon",
       "shortName": "idle_cannon",
       "faviconName": "personal_apps",
+      "excludeFromRecentInWorkMode": true,
       "faviconExtension": "svg"
     },
     {
@@ -39,6 +40,7 @@
       "name": "Choose Your Adventure Book",
       "shortName": "choose_your_adventure_book",
       "faviconName": "personal_apps",
+      "excludeFromRecentInWorkMode": true,
       "faviconExtension": "svg"
     },
     {
@@ -53,12 +55,14 @@
       "name": "Word Games",
       "shortName": "word_games_personal",
       "faviconName": "personal_apps",
+      "excludeFromRecentInWorkMode": true,
       "faviconExtension": "svg"
     },
     {
       "url": "https://xanticious.github.io/revolvoman-clone/",
       "name": "Revolvoman Clone",
       "shortName": "revolvoman_clone",
+      "excludeFromRecentInWorkMode": true,
       "faviconExtension": "ico"
     }
   ]

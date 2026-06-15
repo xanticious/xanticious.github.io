@@ -5,18 +5,21 @@
       "url": "https://xkcd.com/",
       "name": "xkcd",
       "shortName": "xkcd",
+      "excludeFromRecentInWorkMode": true,
       "faviconExtension": "ico"
     },
     {
       "url": "https://www.commitstrip.com/en/",
       "name": "CommitStrip",
       "shortName": "commitstrip",
+      "excludeFromRecentInWorkMode": true,
       "faviconExtension": "png"
     },
     {
       "url": "https://thedailywtf.com/",
       "name": "The Daily WTF",
       "shortName": "the_daily_wtf",
+      "excludeFromRecentInWorkMode": true,
       "faviconExtension": "ico"
     }
   ]

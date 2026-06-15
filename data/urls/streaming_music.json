@@ -5,24 +5,28 @@
       "url": "https://open.spotify.com/",
       "name": "Spotify",
       "shortName": "spotify",
+      "excludeFromRecentInWorkMode": true,
       "faviconExtension": "png"
     },
     {
       "url": "https://www.youtube.com/music/",
       "name": "YouTube Music",
       "shortName": "youtube_music",
+      "excludeFromRecentInWorkMode": true,
       "faviconExtension": "ico"
     },
     {
       "url": "https://music.apple.com/",
       "name": "Apple Music",
       "shortName": "apple_music",
+      "excludeFromRecentInWorkMode": true,
       "faviconExtension": "png"
     },
     {
       "url": "https://www.pandora.com/",
       "name": "Pandora",
       "shortName": "pandora",
+      "excludeFromRecentInWorkMode": true,
       "faviconExtension": "ico"
     }
   ]

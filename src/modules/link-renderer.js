@@ -25,19 +25,31 @@ export class LinkRenderer {
       const categories = await DataService.loadCategories();
       const filteredCategories = this.filterCategoriesByMode(
         categories,
-        isWorkMode
+        isWorkMode,
       );
+
+      const categorizedLinks =
+        await this.loadUrlsForCategories(filteredCategories);
+
+      if (isWorkMode && !categorizedLinks.home_favorites) {
+        const homeFavoritesUrls =
+          await DataService.loadCategoryUrls("home_favorites");
+        if (homeFavoritesUrls) {
+          categorizedLinks.home_favorites = homeFavoritesUrls;
+        }
+      }
 
       this.buildCategoryMap(filteredCategories);
 
       // Add recent category if enabled
       if (settings.showRecent) {
-        this.renderRecentCategory();
+        const workModeExcludedUrls = isWorkMode
+          ? this.getWorkModeExcludedRecentUrlSet(categorizedLinks)
+          : new Set();
+
+        this.renderRecentCategory(isWorkMode, workModeExcludedUrls);
       }
 
-      const categorizedLinks = await this.loadUrlsForCategories(
-        filteredCategories
-      );
       this.renderCategories(filteredCategories, categorizedLinks);
 
       return this.categoryMap;
@@ -66,8 +78,17 @@ export class LinkRenderer {
     });
   }
 
-  renderRecentCategory() {
-    const recentItems = StorageManager.getRecentItems();
+  renderRecentCategory(isWorkMode = false, workModeExcludedUrls = new Set()) {
+    let recentItems = StorageManager.getRecentItems();
+
+    if (isWorkMode) {
+      recentItems = recentItems.filter(
+        (item) =>
+          !item.excludeFromRecentInWorkMode &&
+          !workModeExcludedUrls.has(this.normalizeUrl(item.url)),
+      );
+    }
+
     if (recentItems.length === 0) {
       return;
     }
@@ -96,10 +117,42 @@ export class LinkRenderer {
         if (urls) {
           categorizedLinks[cat.id] = urls;
         }
-      })
+      }),
     );
 
     return categorizedLinks;
+  }
+
+  getWorkModeExcludedRecentUrlSet(categorizedLinks) {
+    const blockedUrls = new Set();
+
+    Object.values(categorizedLinks).forEach((categoryData) => {
+      if (!categoryData || !Array.isArray(categoryData.urls)) {
+        return;
+      }
+
+      categoryData.urls.forEach((urlData) => {
+        if (urlData.excludeFromRecentInWorkMode) {
+          blockedUrls.add(this.normalizeUrl(urlData.url));
+        }
+      });
+    });
+
+    return blockedUrls;
+  }
+
+  normalizeUrl(url) {
+    if (!url) {
+      return "";
+    }
+
+    try {
+      const parsedUrl = new URL(url);
+      const normalizedPath = parsedUrl.pathname.replace(/\/$/, "") || "/";
+      return `${parsedUrl.origin}${normalizedPath}`.toLowerCase();
+    } catch {
+      return String(url).trim().replace(/\/$/, "").toLowerCase();
+    }
   }
 
   renderCategories(categories, categorizedLinks) {
@@ -160,7 +213,7 @@ export class LinkRenderer {
   }
 
   createLinkItem(urlData) {
-    const { url, name, shortName, faviconName, faviconExtension } = urlData;
+    const { url, name, shortName } = urlData;
 
     const li = DOMUtils.createElement("li", {
       dataset: {
@@ -169,19 +222,15 @@ export class LinkRenderer {
       },
     });
 
-    const link = this.createLink(
-      url,
-      name,
-      shortName,
-      faviconName,
-      faviconExtension
-    );
+    const link = this.createLink(urlData);
     li.appendChild(link);
 
     return li;
   }
 
-  createLink(url, name, shortName, faviconName, faviconExtension) {
+  createLink(urlData) {
+    const { url, name, shortName, faviconName, faviconExtension } = urlData;
+
     const a = DOMUtils.createElement("a", {
       attributes: { href: url },
     });
@@ -190,7 +239,7 @@ export class LinkRenderer {
       name,
       shortName,
       faviconName,
-      faviconExtension
+      faviconExtension,
     );
     const span = DOMUtils.createElement("span", {
       className: "link-text",
@@ -202,10 +251,7 @@ export class LinkRenderer {
 
     // Add event listeners to track recent items
     this.addRecentTrackingListeners(a, {
-      url,
-      name,
-      shortName,
-      faviconName,
+      ...urlData,
       faviconExtension,
     });
 
@@ -253,8 +299,14 @@ export class LinkRenderer {
 
   trackRecentItem(urlData) {
     const settings = StorageManager.getSettings();
-    if (settings.showRecent) {
-      StorageManager.addRecentItem(urlData);
+    if (!settings.showRecent) {
+      return;
     }
+
+    if (settings.type === "Work" && urlData.excludeFromRecentInWorkMode) {
+      return;
+    }
+
+    StorageManager.addRecentItem(urlData);
   }
 }

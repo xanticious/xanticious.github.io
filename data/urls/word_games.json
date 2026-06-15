@@ -5,54 +5,63 @@
       "url": "https://www.dcode.fr/word-search-regexp",
       "name": "Regex Dictionary",
       "shortName": "regex_dictionary",
+      "excludeFromRecentInWorkMode": true,
       "faviconExtension": "ico"
     },
     {
       "url": "https://www.bestwordlist.com/c/q/1/5letterwordswithq.htm",
       "name": "Best Word List",
       "shortName": "best_word_list",
+      "excludeFromRecentInWorkMode": true,
       "faviconExtension": "ico"
     },
     {
       "url": "https://wordplay.com/new",
       "name": "Wordplay Wordle",
       "shortName": "wordplay_wordle",
+      "excludeFromRecentInWorkMode": true,
       "faviconExtension": "ico"
     },
     {
       "url": "https://qntm.org/files/absurdle/absurdle.html",
       "name": "Absurdle",
       "shortName": "absurdle",
+      "excludeFromRecentInWorkMode": true,
       "faviconExtension": "ico"
     },
     {
       "url": "https://crosswordle.serializer.ca/",
       "name": "Crosswordle",
       "shortName": "crosswordle",
+      "excludeFromRecentInWorkMode": true,
       "faviconExtension": "ico"
     },
     {
       "url": "https://www.sedecordle.com/",
       "name": "Sedecordle",
       "shortName": "sedecordle",
+      "excludeFromRecentInWorkMode": true,
       "faviconExtension": "png"
     },
     {
       "url": "https://globle-game.com/",
       "name": "Globle",
       "shortName": "globle",
+      "excludeFromRecentInWorkMode": true,
       "faviconExtension": "ico"
     },
     {
       "url": "https://www.wordplays.com/wordgames/text-twist",
       "name": "Text Twist",
       "shortName": "text_twist",
+      "excludeFromRecentInWorkMode": true,
       "faviconExtension": "ico"
     },
     {
       "url": "https://www.wordplays.com/help/boggle/",
       "name": "Boggle",
       "shortName": "boggle",
+      "excludeFromRecentInWorkMode": true,
       "faviconExtension": "ico"
     }
   ]

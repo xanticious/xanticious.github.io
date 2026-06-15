@@ -5,60 +5,70 @@
       "url": "https://www.facebook.com/",
       "name": "Facebook",
       "shortName": "facebook",
+      "excludeFromRecentInWorkMode": true,
       "faviconExtension": "ico"
     },
     {
       "url": "https://twitter.com/",
       "name": "Twitter",
       "shortName": "twitter",
+      "excludeFromRecentInWorkMode": true,
       "faviconExtension": "ico"
     },
     {
       "url": "https://www.instagram.com/",
       "name": "Instagram",
       "shortName": "instagram",
+      "excludeFromRecentInWorkMode": true,
       "faviconExtension": "png"
     },
     {
       "url": "https://www.linkedin.com/",
       "name": "LinkedIn",
       "shortName": "linkedin",
+      "excludeFromRecentInWorkMode": true,
       "faviconExtension": "ico"
     },
     {
       "url": "https://www.snapchat.com/",
       "name": "Snapchat",
       "shortName": "snapchat",
+      "excludeFromRecentInWorkMode": true,
       "faviconExtension": "ico"
     },
     {
       "url": "https://www.pinterest.com/",
       "name": "Pinterest",
       "shortName": "pinterest",
+      "excludeFromRecentInWorkMode": true,
       "faviconExtension": "png"
     },
     {
       "url": "https://www.reddit.com/",
       "name": "Reddit",
       "shortName": "reddit",
+      "excludeFromRecentInWorkMode": true,
       "faviconExtension": "png"
     },
     {
       "url": "https://www.tumblr.com/",
       "name": "Tumblr",
       "shortName": "tumblr",
+      "excludeFromRecentInWorkMode": true,
       "faviconExtension": "ico"
     },
     {
       "url": "https://www.tiktok.com/",
       "name": "TikTok",
       "shortName": "tiktok",
+      "excludeFromRecentInWorkMode": true,
       "faviconExtension": "ico"
     },
     {
       "url": "https://www.whatsapp.com/",
       "name": "WhatsApp",
       "shortName": "whatsapp",
+      "excludeFromRecentInWorkMode": true,
       "faviconExtension": "png"
     }
   ]

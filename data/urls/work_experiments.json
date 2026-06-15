@@ -5,24 +5,28 @@
       "url": "https://jenkins.sirsidynix.com/job/alitchfield-vibe-periodic-table/job/main/Periodic_20Table_20Uses",
       "name": "Periodic Table Uses",
       "shortName": "periodic_table_uses",
+      "excludeFromRecentInWorkMode": true,
       "faviconExtension": "svg"
     },
     {
       "url": "https://jenkins.sirsidynix.com/job/alitchfield-vibe-library-metroid-game/job/main/Librarian_20Metroidvania_20Game",
       "name": "Librarian Metroidvania",
       "shortName": "librarian_metroidvania",
+      "excludeFromRecentInWorkMode": true,
       "faviconExtension": "ico"
     },
     {
       "url": "https://jenkins.sirsidynix.com/job/alitchfield-vibe-board-games/job/main/Board_20Games",
       "name": "Board Games",
       "shortName": "board_games",
+      "excludeFromRecentInWorkMode": true,
       "faviconExtension": "svg"
     },
     {
       "url": "https://jenkins.sirsidynix.com/job/alitchfield-vibe-vector-racer/job/main/Vector_20Racer",
       "name": "Vector Racer",
       "shortName": "vector_racer",
+      "excludeFromRecentInWorkMode": true,
       "faviconExtension": "svg"
     }
   ]
