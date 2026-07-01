@@ -140,6 +140,34 @@
       "shortName": "noam_test",
       "faviconExtension": "png",
       "faviconName": "sd_favicon"
+    },
+    {
+      "url": "https://tau.dev.sirsidynix.net/admin",
+      "name": "Tau (Admin)",
+      "shortName": "tau_admin",
+      "faviconExtension": "png",
+      "faviconName": "sd_favicon"
+    },
+    {
+      "url": "https://tau.dev.sirsidynix.net/bcd-ui",
+      "name": "Tau (BCD)",
+      "shortName": "tau_bcd",
+      "faviconExtension": "png",
+      "faviconName": "sd_favicon"
+    },
+    {
+      "url": "https://teamx.dev.sirsidynix.net/admin",
+      "name": "TeamX (Admin)",
+      "shortName": "teamx_admin",
+      "faviconExtension": "png",
+      "faviconName": "sd_favicon"
+    },
+    {
+      "url": "https://knights.dev.sirsidynix.net/",
+      "name": "Knights",
+      "shortName": "knights",
+      "faviconExtension": "png",
+      "faviconName": "sd_favicon"
     }
   ]
 }

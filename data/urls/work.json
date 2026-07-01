@@ -61,20 +61,8 @@
       "faviconExtension": "webp"
     },
     {
-      "url": "https://jenkins/view/Knights/job/TeamXUpgrade/",
-      "name": "Old Jenkins",
-      "shortName": "old_jenkins",
-      "faviconExtension": "ico"
-    },
-    {
-      "url": "https://jenkins-rl9.sirsi.pvt/view/bcui/job/bcui-bcd-ui/",
-      "name": "New Jenkins",
-      "shortName": "new_jenkins",
-      "faviconExtension": "ico"
-    },
-    {
       "url": "https://jenkins.sirsidynix.com/job/bluec-ssos/",
-      "name": "Newest Jenkins",
+      "name": "Jenkins",
       "shortName": "newest_jenkins",
       "faviconExtension": "ico"
     },

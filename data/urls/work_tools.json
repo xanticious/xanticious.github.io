@@ -38,6 +38,24 @@
       "shortName": "matcha_media_studio",
       "faviconName": "matcha",
       "faviconExtension": "svg"
+    },
+    {
+      "url": "https://jenkins.sirsidynix.com/job/alitchfield-diff-viewer/job/main/Diff_20Viewer/",
+      "name": "Diff Viewer",
+      "shortName": "diff_viewer",
+      "faviconExtension": "svg"
+    },
+    {
+      "url": "https://jenkins.sirsidynix.com/job/alitchfield-support-bucket-explorer/job/main/Time_20Logging_20Buckets_20Explorer/",
+      "name": "Support Bucket Explorer",
+      "shortName": "support_bucket_explorer",
+      "faviconExtension": "ico"
+    },
+    {
+      "url": "https://www.figma.com",
+      "name": "Figma",
+      "shortName": "figma",
+      "faviconExtension": "svg"
     }
   ]
 }
