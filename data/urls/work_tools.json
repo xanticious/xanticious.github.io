@@ -14,6 +14,12 @@
       "faviconExtension": "svg"
     },
     {
+      "url": "https://jenkins.sirsidynix.com/job/alitchfield-ascii-file-tree-builder/job/main/Ascii_20File_20Tree_20Builder/",
+      "name": "Ascii File Tree Builder",
+      "shortName": "file_tree",
+      "faviconExtension": "svg"
+    },
+    {
       "url": "https://jenkins.sirsidynix.com/job/ncoe-ilsws-viewer/job/master/IlsWs_20Viewer/",
       "name": "IlsWs Viewer",
       "shortName": "ilsws_viewer",
