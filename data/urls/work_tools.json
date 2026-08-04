@@ -62,6 +62,12 @@
       "name": "Figma",
       "shortName": "figma",
       "faviconExtension": "svg"
+    },
+    {
+      "url": "https://jenkins.sirsidynix.com/job/alitchfield-programming-trainer/job/main/Programming_20Trainer/",
+      "name": "Programming Trainer",
+      "shortName": "programming_trainer",
+      "faviconExtension": "svg"
     }
   ]
 }
