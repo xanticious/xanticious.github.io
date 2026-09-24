@@ -68,6 +68,13 @@
       "name": "Programming Trainer",
       "shortName": "programming_trainer",
       "faviconExtension": "svg"
+    },
+    {
+      "url": "https://devlogs.sirsi.pvt/",
+      "name": "Log Insight (team / preprod / patchprod)",
+      "shortName": "log_insight",
+      "faviconExtension": "png",
+      "faviconName": "sd_favicon"
     }
   ]
 }
