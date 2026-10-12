@@ -28,6 +28,20 @@
       "shortName": "vector_racer",
       "excludeFromRecentInWorkMode": true,
       "faviconExtension": "svg"
+    },
+    {
+      "url": "https://jenkins.sirsidynix.com/job/alitchfield-library-sims/job/main/Library_20Sims/",
+      "name": "Library Sims",
+      "shortName": "library_sims",
+      "excludeFromRecentInWorkMode": true,
+      "faviconExtension": "svg"
+    },
+    {
+      "url": "https://jenkins.sirsidynix.com/job/alitchfield-color-variations/job/main/Color_20Variations/",
+      "name": "Color Variations",
+      "shortName": "color_variations",
+      "excludeFromRecentInWorkMode": true,
+      "faviconExtension": "svg"
     }
   ]
 }
