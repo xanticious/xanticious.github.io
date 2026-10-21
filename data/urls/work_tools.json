@@ -76,6 +76,13 @@
       "faviconExtension": "svg"
     },
     {
+      "url": "https://jenkins.sirsidynix.com/job/ncoe-ilsws-client/job/master/IlsWs_20Client/",
+      "name": "IlsWs Client",
+      "shortName": "ilsws_client",
+      "faviconExtension": "ico",
+      "faviconName": "newest_jenkins"
+    },
+    {
       "url": "https://devlogs.sirsi.pvt/",
       "name": "Log Insight (team / preprod / patchprod)",
       "shortName": "log_insight",
