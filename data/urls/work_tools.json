@@ -8,6 +8,12 @@
       "faviconExtension": "svg"
     },
     {
+      "url": "https://jenkins.sirsidynix.com/job/alitchfield-html-viewer/job/main/Lightning_20HTML_20Viewer_2fEditor/",
+      "name": "Lightning HTML Viewer",
+      "shortName": "lightning_html_viewer",
+      "faviconExtension": "svg"
+    },
+    {
       "url": "https://jenkins.sirsidynix.com/job/alitchfield-vibe-todo-list/job/main/Lightning_20Todo_20App",
       "name": "Lightning Todo",
       "shortName": "lightning_todo",
