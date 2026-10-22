@@ -81,13 +81,6 @@
       "shortName": "ilsws_client",
       "faviconExtension": "ico",
       "faviconName": "newest_jenkins"
-    },
-    {
-      "url": "https://devlogs.sirsi.pvt/",
-      "name": "Log Insight (team / preprod / patchprod)",
-      "shortName": "log_insight",
-      "faviconExtension": "png",
-      "faviconName": "sd_favicon"
     }
   ]
 }

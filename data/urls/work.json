@@ -115,6 +115,13 @@
       "shortName": "log_insight",
       "faviconName": "vmware",
       "faviconExtension": "ico"
+    },
+    {
+      "url": "https://devlogs.sirsi.pvt/",
+      "name": "Log Insight (team / preprod / patchprod)",
+      "shortName": "log_insight_team",
+      "faviconExtension": "png",
+      "faviconName": "sd_favicon"
     }
   ]
 }
